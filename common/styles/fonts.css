@@ -2,24 +2,25 @@
 
 @font-face {
   font-family: 'Rubik';
-  src: url('../fonts/Rubik-ExtraBold.ttf') format('ttf');
+  src: url('../fonts/Rubik-VariableFont_wght.woff') format('woff');
 }
-
+@font-face {
+  font-family: 'RubikBold';
+  src: url('../fonts/Rubik-ExtraBold.woff') format('woff');
+}
 @font-face {
   font-family: 'cafe24';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+  src: url('../fonts/Cafe24SsurroundAir.woff') format('woff');
 }
 @font-face {
   font-family: 'cafe24Bold';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  src: url('../fonts/Cafe24Ssurround.woff') format('woff');
 }
 @font-face {
   font-family: 'nexonRegular';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+  src: url('../fonts/NEXONLv1GothicRegular.woff') format('woff');
+}
+@font-face {
+  font-family: 'babyface';
+  src: url('../fonts/Babyface-Tilted.woff') format('woff');
 }

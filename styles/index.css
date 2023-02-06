@@ -5,7 +5,8 @@
   --font: 'cafe24';
   --fontbold: 'cafe24Bold';
   --nexonfont: 'nexonRegular';
-  --nexonfontbold: 'nexonBold'
+  --nexonfontbold: 'nexonBold';
+  --rubikbold: 'rubikBold';
 }
 
 html {
@@ -21,10 +22,11 @@ h2 {
   /* overflow: visible; */
 }
 h3 {
+  font-family: var(--rubikbold);
   -webkit-text-stroke: 0.25vw #000;
   color: transparent;
   font-size: 3.5vw;
-  font-weight: 900;
+  font-weight: bold;
   padding-left: 2.5vw;
   position: relative;
   height: 4.2vw;
@@ -717,6 +719,7 @@ h1 a img {
   opacity: 0.5;
 }
 .section .skillsSwiper .swiper-wrapper .swiper-slide h4 {
+  font-family: var(--rubikbold);
   font-size: 2vw;
   font-weight: 800;
   letter-spacing: -1px;
@@ -867,6 +870,7 @@ h1 a img {
   position: relative;
 }
 .contact .contact_box .contact_title .title_box h4 {
+  font-family: var(--rubikbold);
   color: #fff;
   font-size: 6rem;
   font-weight: 700;
