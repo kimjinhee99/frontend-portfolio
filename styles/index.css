@@ -9,7 +9,7 @@
 }
 
 html {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik', 'cafe24Bold', sans-serif;
   text-transform: capitalize;
   letter-spacing: -3px;
 }
@@ -32,13 +32,17 @@ h3 {
 h3:after {
   content: "";
   background-color: #AED0EE;
-  width: 20vw;
+  width: 0;
   height: 2.5vw;
   border-radius: 40px;
   display: block;
   position: absolute;
   bottom: -10%; left: 10%;
   z-index: -1;
+}
+.section.active h3:after {
+  width: 20vw;
+  transition: 1s;
 }
 .about_header, .portfolio_header, .skills_header {
   display: flex;
@@ -122,6 +126,9 @@ h3:after {
   height: 100%;
   box-sizing: border-box;
 }
+.fp-watermark {
+  display: none;
+}
 
 
 /* header  */
@@ -155,20 +162,24 @@ h1 a img {
 }
 .header .banner .banner_title {
   position: relative;
-  top: 4vw;
-  padding-left: 13vw;
-  /* padding-top: 5vw; */
+  padding-left: 23vw;
+  font-weight: bold;
+  top: -1vw;
 }
 .header .banner .banner_title .title_top,
 .header .banner .banner_title .title_bottom {
-  font-size: 15vw;
+  font-size: 21vw;
   color: transparent;
   position: relative;
   display: inline-block;
+  font-family: 'babyface';
+  font-weight: 300;
+  text-transform: uppercase;
 }
 .header .banner .banner_title .title_bottom {
-  text-transform: lowercase;
-  padding-left: 26VW;
+  padding-left: 23VW;
+  position: absolute;
+  top: 18vw;
 }
 .header .banner .banner_title .title_top::after {
   content: "Port";
@@ -184,20 +195,20 @@ h1 a img {
   -webkit-text-stroke: 0px #000;
   position: absolute;
   left: 0.5vw; top: 0.5vw;
-  padding-left: 26VW;
+  padding-left: 23VW;
   z-index: -1;
 }
 .header .banner .banner_title .title_sub {
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   letter-spacing: 0;
   position: absolute;
-  bottom: 17vw; left: 30vw;
+  top: 20.5vw; left: 35vw;
   font-family: var(--font);
   /* font-weight: 500; */
 }
 .header .banner .aladin {
   position: absolute;
-  right: 11vw; top: 0vw;
+  right: 12vw; top: -5vw;
   animation: aladin 3s linear infinite backwards;
 }
 @keyframes aladin {
@@ -212,7 +223,7 @@ h1 a img {
   }
 }
 .header .banner .aladin img {
-  width: 24vw;
+  width: 22vw;
 }
 .header .banner .monkey_star {
   width: 100px;
@@ -227,13 +238,19 @@ h1 a img {
 .header .banner .monkey_star .monkey {
   width: 13VW;
   position: absolute;
-  left: 0; bottom: 2vw;
+  left: 0; bottom: -8vw;
 }
 .header .banner .monkey_star .star {
   width: 10vw;
   position: absolute;
-  left: 0.3vw; bottom: -5vw;
+  left: 0.3vw; bottom: -15vw;
   transition: 3s;
+}
+.header.active .banner .title_star {
+  background: url(../images/sfef.gif) no-repeat 50% / cover;
+  position: absolute;
+  width: 65vw; height: 700px;
+  top: 0vw; left: 19vw;
 }
 .header .banner_bg .bg_j {
   position: absolute;
@@ -278,27 +295,44 @@ h1 a img {
   height: 5vw;
   display: inline-block;
 }
+
 .header .arrow_down span {
   font-size: 2vw;
   font-weight: 500;
   position: absolute;
-  right: 1.3vw; top: 44.5vw;
+  left: 50vw; top: 44.5vw;
   /* height: 100px; */
+  animation: arrow 2s linear infinite backwards;
 }
-.header .arrow_down:after {
-  content: "";
-  border: 1px solid #000;
-  position: absolute;
-  right: 2.25vw; top: 38.5vw;
-  height: 7vw;
+@keyframes arrow {
+  0% {
+    transform: translateY(0vw);
+  }
+  50% {
+    transform: translateY(1vw);
+  }
+  100% {
+    transform: translateY(0vw);
+  }
 }
 
 /* about me */
+.about .about_inner {
+  overflow: hidden;
+}
 .about_box {
   display: flex;
   justify-content: space-around;
   padding: 4vw 6.5vw;
+  transform: translateY(10vw);
+  opacity: 0;
 }
+.about.active .about_box {
+  transform: translateY(0vw);
+  opacity: 1;
+  transition: 1.5s;
+}
+
 .about_box .my_photo {
   width: 24.5vw;
 }
@@ -357,24 +391,33 @@ h1 a img {
 .about_box .about_txt_box .about_txt p::after {
   content: "";
   display: block;
-  width: 6.7vw;  height: 0.4vw;
+  width: 0px;  height: 0.4vw;
   background-color: #F2C0C1;
   border-radius: 40px;
   position: absolute;
   top: 5.5vw; right: 2.6vw;
+  transition: 1s;
+}
+.about.active .about_box .about_txt_box .about_txt p::after {
+  width: 6.7vw;
+  transition-delay: 1.5s;
 }
 .about_box .about_txt_box .about_txt p::before {
   content: "";
   display: block;
-  width: 11vw;  height: 2vw;
+  width: 0;  height: 2vw;
   background-color: #FFEA79;
   border-radius: 40px;
   position: absolute;
   top: 7.9vw; left: -0.5vw;
   z-index: -1;
   opacity: 0.7;
+  transition: 1s;
 }
-
+.about.active .about_box .about_txt_box .about_txt p::before {
+  width: 11vw;
+  transition-delay: 2s;
+}
 .about_box .about_txt_box .tag {
   width: 28vw;
   padding-left: 2.5vw;
@@ -416,11 +459,21 @@ h1 a img {
 }
 
 /* portfolio */
+.portfolio .portfolio_inner {
+  overflow: hidden;
+}
 .portfolio .portfolio_list_box {
   display: flex;
   justify-content: center;
   align-items: center;
   /* margin: 50px 0; */
+  transform: translateY(10vw);
+  opacity: 0;
+}
+.portfolio.active .portfolio_list_box {
+  transform: translateY(0vw);
+  opacity: 1;
+  transition: 1.5s;
 }
 .portfolio .portfolio_list_box .portfolio_list {
   margin-right: 3vw;
@@ -434,16 +487,15 @@ h1 a img {
   position: relative;
   border-bottom: 2px solid #000;
   transition: 1s;
+  overflow: hidden;
 }
 .portfolio .portfolio_list_box .portfolio_list>li::before {
   content: attr(data-hover);
   position: absolute;
-  top: 1vw; left: 0vw;
   overflow: hidden;
   color: #FFD600;
   transition: all 0.5s;
-  width: 0%;
-  display: inline;
+  width: 0%; height: 3vw;
 }
 .portfolio .portfolio_list_box .portfolio_list>li:hover:before {
   width: 100%;
@@ -467,19 +519,19 @@ h1 a img {
   font-size: 2vw;
   font-weight: bold;
   position: absolute;
-  top: 1vw; right: 20.5vw;
+  top: 1vw; left: 15.5vw;
   transform: rotate(-45deg);
   opacity: 0;
   transition: 0.5s;
 }
 .portfolio .portfolio_list_box .portfolio_list li:nth-child(2) .list_icon {
-  right: 9.5vw;
+  left: 9.5vw;
 }
 .portfolio .portfolio_list_box .portfolio_list li:nth-child(3) .list_icon {
-  right: 22.5vw;
+  left: 22.5vw;
 }
 .portfolio .portfolio_list_box .portfolio_list li:nth-child(4) .list_icon {
-  right: 7.5vw;
+  left: 7.5vw;
 }
 .portfolio .portfolio_list_box .portfolio_list li:hover .list_icon {
   opacity: 1;
@@ -497,21 +549,10 @@ h1 a img {
   width: 32vw; height: 32vw;
   /* text-indent: -9999px; */
   overflow: hidden;
+  position: relative;
 }
-.portfolio .portfolio_list_box .portfolio_preview .preview_box img {
-  animation: scroll 10s linear infinite;
-  /* transform: translateY(-40%); */
-}
-@keyframes scroll {
-  0% {
-    transform: translateY(0);
-  }
-  30% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-42%);
-  }
+.portfolio .portfolio_list_box .portfolio_preview .preview_box :hover img{
+  background-color: #ddd;
 }
 .portfolio .portfolio_list_box .portfolio_preview .circle_box {
   display: flex;
@@ -561,7 +602,6 @@ h1 a img {
 }
 .portfolio .portfolio_list_box .portfolio_list li.active {
   color: #FFD600;
-  padding-bottom: 2vw;
 }
 .portfolio .portfolio_list_box .portfolio_list li.active:after {
   background-color: #FFD600;
@@ -577,20 +617,12 @@ h1 a img {
   transition: 1s;
 }
 .portfolio .portfolio_list_box .portfolio_list .title .sub_list.active li {
-  font-size: 1vw;
+  font-size: 1.1vw;
   font-weight: 500;
   border: none;
   padding: 0.2vw;
   letter-spacing: 0;
   color: #000;
-}
-.portfolio .portfolio_list_box .portfolio_list li:nth-child(2) .sub_explain.active {
-  /* top: 3.5vw; */
-  right: -1.5vw;
-}
-.portfolio .portfolio_list_box .portfolio_list li:nth-child(4) .sub_explain.active {
-  /* top: 3.5vw; */
-  right: -3.5vw;
 }
 .portfolio .portfolio_list_box .portfolio_list .title .sub_list.active li:nth-child(2) {
   font-size: 0.6vw;
@@ -600,14 +632,14 @@ h1 a img {
   display: block;
   font-family: 'Rubik', sans-serif;
   position: absolute;
-  right: 7vw;
-  top: 0;
+  right: 0vw;
+  bottom: 0;
   padding-top: 1vw;
   padding-left: 1vw;
   color: #5F5D5D;
 }
-
 .portfolio .portfolio_list_box .portfolio_list .sub_explain.active li {
+  display: inline;
   font-size: 0.8vw;
   font-weight: 200;
   border: none;
@@ -617,18 +649,48 @@ h1 a img {
   letter-spacing: 0;
   text-transform: capitalize;
 }
-.portfolio .portfolio_list_box .portfolio_list .sub_explain.active li:nth-child(1) {
-  font-size: 1.5vw;
-  font-family: var(--font);
-  padding: 0;
+.preview_bg {
+  position: absolute;
+  height: 100%; width: 100%;
+  top: 0;
+}
+.preview_bg:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.preview_link span {
+  position: absolute;
+  top: 11vw; left: 11vw;
+  font-size: 9vw;
+  color: #fff;
+  display: none;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  padding: 1vw;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.preview_bg:hover .preview_link span {
+  display: block;
+}
+#portfolioImg2, #portfolioImg3, #portfolioImg4 {
+  display: none;
+}
+#portfolio1_box, #portfolio2_box, #portfolio1\3_box, #portfolio1\4_box {
+  position: relative;
 }
 
 /* skills */
 .skills {
   position: relative;
 }
+.skills .skills_inner {
+  overflow: hidden;
+}
 .section .skills_header h3:after {
+  width: 0;
+}
+.section.active .skills_header h3:after {
   width: 13vw;
+  transition: 1s;
 }
 .section .skillsSwiper {
   padding-top: 17vw;
@@ -636,6 +698,13 @@ h1 a img {
   /* padding-left: 20px; */
   /* margin-right: 150px; */
   overflow: hidden;
+  transform: translateY(10vw);
+  opacity: 0;
+}
+.skills.active .skillsSwiper {
+  transform: translateY(0vw);
+  opacity: 1;
+  transition: 1.5s;
 }
 .section .skillsSwiper .swiper-wrapper {
   /* overflow: hidden; */
@@ -763,11 +832,11 @@ h1 a img {
   bottom: 0vw; left: 9vw;
   text-indent: -9999px;
   transition: 1s;
-  transition-delay: .5s;
 }
 .skills.active .skills_bg_circle {
   width: 26vw; height: 26vw;
   -webkit-transform: translateY(-5vw);
+  transition-delay: 1.5s;
 }
 
 /* contact */
@@ -846,7 +915,7 @@ h1 a img {
 }
 .contact .contact_box .contact_title .email_btn {
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 2rem;
   letter-spacing: 0px;
   background-color: rgba(255, 255, 255, 0.5);
   width: 200px; height: 70px;
@@ -863,6 +932,8 @@ h1 a img {
 .contact .contact_box .contact_title .email_btn p {
   z-index: 9;
   position: relative;
+  transform: translateX(22%);
+  transition: 0.5s;
 }
 .contact .contact_box .contact_title .email_btn::before {
   content: "";
@@ -882,6 +953,19 @@ h1 a img {
 }
 .contact .contact_box .contact_title .email_btn:hover::before {
   -webkit-transform: scale(12);
+}
+.contact .contact_box .contact_title .email_btn:hover p {
+  transform: translateX(0.5vw);
+}
+.contact .contact_box .contact_title .email_btn span {
+  font-size: 3rem;
+  transform: translateX(7vw);
+  z-index: 9;
+
+  transition: 0.5s;
+}
+.contact .contact_box .contact_title .email_btn:hover span {
+  transform: translate(1vw);
 }
 .contact .go_up_btn {
   position: absolute;

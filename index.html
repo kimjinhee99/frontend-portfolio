@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jinhee's Portfolio</title>
   <!-- 초기화 css -->
   <link rel="stylesheet" href="./common/styles/minireset.min.css">
@@ -17,6 +18,14 @@
   href="./common/styles/swiper-bundle.min.css"/>
   <!-- 폰트 -->
   <link rel="stylesheet" href="./common/styles/fonts.css">
+  <!-- open graph -->
+  <meta property="og:title" content="jinhee's portfolio">
+  <meta property="og:url" content="https://kimjinhee99.github.io/Portfolio/index.html">
+  <meta property="og:image" content="./common/images/opengraph.png">
+  <meta property="og:description" content="진희의 포트폴리오">
+  <meta property="og:type" content="website">
+  <!-- favicon -->
+  <link rel="icon" href="../common/images/favicon.ico" sizes="any">
   <!-- 내가 적용한 css -->
   <link rel="stylesheet" href="./styles/index.css">
 </head>
@@ -57,6 +66,7 @@
           <div class="monkey"><img src="./images/원숭이움짤.gif" alt="monkey"></div>
         <div class="star"><img src="./images/star3.png" alt="star"></div>
         </div>
+        <div class="title_star"></div>
       </div>
       <div class="banner_bg">
         <div class="bg_j">j</div>
@@ -71,62 +81,64 @@
 
     <!-- about me -->
     <section class="section about">
-      <div class="about_header">
-        <h3>about me</h3>
-        <div class="menu_bar">
-          <span class="material-symbols-outlined">menu</span>
-          <ul class="gnb">
-            <li>
-              <a href="#section2">about</a>
-            </li>
-            <li>
-              <a href="#section3">portfolio</a>
-            </li>
-            <li>
-              <a href="#section4">skills</a>
-            </li>
-            <li>
-              <a href="#section5">contact</a>
-            </li>
-          </ul>
-      </div>
-      </div>
-      <div class="about_box">
-        <div class="my_photo">
-          <img src="./images/about-me.png" alt="illust">
+      <div class="about_inner">
+        <div class="about_header">
+          <h3>about me</h3>
+          <div class="menu_bar">
+            <span class="material-symbols-outlined">menu</span>
+            <ul class="gnb">
+              <li>
+                <a href="#section2">about</a>
+              </li>
+              <li>
+                <a href="#section3">portfolio</a>
+              </li>
+              <li>
+                <a href="#section4">skills</a>
+              </li>
+              <li>
+                <a href="#section5">contact</a>
+              </li>
+            </ul>
         </div>
-        <div class="about_txt_box">
-          <h4>안녕하세요 신입 웹퍼블리셔 김진희입니다.</h4>
-          <div class="about_txt">
-            <div class="arrow_right">
-              <span class="material-symbols-outlined">trending_flat</span>
+        </div>
+        <div class="about_box">
+          <div class="my_photo">
+            <img src="./images/about-me.png" alt="illust">
+          </div>
+          <div class="about_txt_box">
+            <h4>안녕하세요 신입 웹퍼블리셔 김진희입니다.</h4>
+            <div class="about_txt">
+              <div class="arrow_right">
+                <span class="material-symbols-outlined">trending_flat</span>
+              </div>
+              <p>디자이너로 회사를 다니던 도중 코딩에 흥미를 느껴서 굳게 마음 먹고 
+                새로운 도전을 하게 되었습니다.<br>
+                ‘나에게 실패란 없다’는 생각으로 어려움이 닥쳐도 끈기와 책임감으로 
+                끊임없이 성장해 나갈 것입니다.<br>
+                풍부한 상상력과 감각으로 누구보다 가치있는 퍼블리셔가 되겠습니다.</p>
             </div>
-            <p>디자이너로 회사를 다니던 도중 코딩에 흥미를 느껴서 굳게 마음 먹고 
-              새로운 도전을 하게 되었습니다.<br>
-              ‘나에게 실패란 없다’는 생각으로 어려움이 닥쳐도 끈기와 책임감으로 
-              끊임없이 성장해 나갈 것입니다.<br>
-              풍부한 상상력과 감각으로 누구보다 가치있는 퍼블리셔가 되겠습니다.</p>
-          </div>
-          <div class="tag">
-            <ul class="taglist">
-              <li># 1999.09.23</li>
-              <li># 경기도 수원시 거주</li>
-              <li># 끈기</li>
-            </ul>
-            <ul class="taglist">
-              <li># 실패란 없다</li>
-              <li># 책임감</li>
-              <li># 상상력</li>
-            </ul>
+            <div class="tag">
+              <ul class="taglist">
+                <li># 1999.09.23</li>
+                <li># 경기도 수원시 거주</li>
+                <li># 끈기</li>
+              </ul>
+              <ul class="taglist">
+                <li># 실패란 없다</li>
+                <li># 책임감</li>
+                <li># 상상력</li>
+              </ul>
+            </div>
           </div>
         </div>
+        <div class="about_bg">who am i</div>
       </div>
-      <div class="about_bg">who am i</div>
     </section>
 
     <!-- portfolio -->
-    <section class="section">
-      <div class="portfolio">
+    <section class="section portfolio">
+      <div class="portfolio_inner">
         <div class="portfolio_header">
           <h3>portfolio</h3>
           <div class="menu_bar">
@@ -146,39 +158,33 @@
               </li>
             </ul>
           </div>
-        </div>
-        <div class="portfolio_list_box">
+      </div>
+      <div class="portfolio_list_box">
           <ul class="portfolio_list">
-            <li data-hover="goobne" class="title active" data-url="./images/Portfolio_Preview2.png">goobne
-              <ul class="sub_list active">
-                <li>goobne 굽네</li>
-                <li>2022.02.02-2022.02.02</li>
-              </ul>
-              <div class="icon"><span class="material-symbols-outlined list_icon">arrow_forward</span></div>
-              <ul class="sub_explain active">
-                <li class="sub_title">반응형 웹사이트</li>
-                <li>#publishing</li>
-                <li>#publishing</li>
-                <li>#publishing</li>
-                <li>#publishing</li>
-              </ul>
-            </li>
-            <li data-hover="naverwebtoon" class="title" data-url="./images/Portfolio_Preview.png">naverwebtoon
+            <li data-hover="법무법인화우" class="title" data-url="./images/Portfolio_Preview2.png" id="portfolio1">법무법인화우
               <ul class="sub_list">
-                <li>naver webtoon
-                네이버 웹툰</li>
-                <li>2022.02.02-2022.02.02</li>
+                <li>웹퍼블리싱</li>
+                <!-- <li>2022.12.16 - 2022.12.26</li> -->
               </ul>
               <div class="icon"><span class="material-symbols-outlined list_icon">arrow_forward</span></div>
               <ul class="sub_explain">
-                <li class="sub_title">반응형 웹사이트</li>
-                <li>#publishing</li>
-                <li>#publishing</li>
-                <li>#publishing</li>
-                <li>#publishing</li>
+                <li>#HTML5</li>
+                <li>#CSS</li>
+                <li>#JAVASCRIPT</li>
               </ul>
             </li>
-            <li data-hover="deers" class="title" data-url="./images/Portfolio_Preview2.png">deers
+            <li data-hover="DYAMI" class="title" data-url="./images/Portfolio_Preview.png" id="portfolio2">DYAMI
+              <ul class="sub_list">
+                <li>반응형 웹사이트</li>
+              </ul>
+              <div class="icon"><span class="material-symbols-outlined list_icon">arrow_forward</span></div>
+              <ul class="sub_explain">
+                <li>#HTML</li>
+                <li>#CSS</li>
+                <li>#SWIPER</li>
+              </ul>
+            </li>
+            <li data-hover="deers" class="title" data-url="./images/Portfolio_Preview2.png" id="portfolio3">deers
               <ul class="sub_list">
                 <li>deers 디어스</li>
                 <li>2022.02.02-2022.02.02</li>
@@ -192,7 +198,7 @@
                 <li>#publishing</li>
               </ul>
             </li>
-            <li data-hover="conlabcompany" class="title" data-url="./images/Portfolio_Preview.png">conlabcompany
+            <li data-hover="conlabcompany" class="title" data-url="./images/Portfolio_Preview.png" id="portfolio4">conlabcompany
               <ul class="sub_list">
                 <li>conlab company
                 콘랩컴퍼니</li>
@@ -215,8 +221,52 @@
               <div class="circle">circle</div>
             </div>
             <div class="preview_box">
+              <div class="preview_bg"></div>
               <div class="preview_img">
-                <img id="img" src="./images/Portfolio_Preview.png" alt="img">
+                <div id="portfolio1_box">
+                  <img id="portfolioImg1" src="./images/Portfolio_Preview.png" alt="img">
+                  <div class="preview_bg">
+                    <div class="preview_link">
+                      <a href="#">
+                        <span class="material-symbols-outlined">
+                          tab_move</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div id="portfolio2_box">
+                  <img id="portfolioImg2" src="./images/Portfolio_Preview2.png" alt="img">
+                  <div class="preview_bg">
+                    <div class="preview_link">
+                      <a href="#">
+                        <span class="material-symbols-outlined">
+                          tab_move</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div id="portfolio3_box">
+                  <img id="portfolioImg3" src="./images/Portfolio_Preview.png" alt="img">
+                  <div class="preview_bg">
+                    <div class="preview_link">
+                      <a href="#">
+                        <span class="material-symbols-outlined">
+                          tab_move</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div id="portfolio4_box">
+                  <img id="portfolioImg4" src="./images/Portfolio_Preview2.png" alt="img">
+                  <div class="preview_bg">
+                    <div class="preview_link">
+                      <a href="#">
+                        <span class="material-symbols-outlined">
+                          tab_move</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="circle_box">
@@ -225,93 +275,89 @@
               <div class="circle">circle</div>
             </div>
           </div>
-        </div>
       </div>
+      </div>
+      
     </section>
 
     <!-- skills -->
     <section class="section skills">
-      <div class="skills_header">
-        <h3>skills</h3>
-        <div class="menu_bar">
-          <span class="material-symbols-outlined">menu</span>
-          <ul class="gnb">
-            <li>
-              <a href="#section2">about</a>
-            </li>
-            <li>
-              <a href="#section3">portfolio</a>
-            </li>
-            <li>
-              <a href="#section4">skills</a>
-            </li>
-            <li>
-              <a href="#section5">contact</a>
-            </li>
-          </ul>
+      <div class="skills_inner">
+        <div class="skills_header">
+          <h3>skills</h3>
+          <div class="menu_bar">
+            <span class="material-symbols-outlined">menu</span>
+            <ul class="gnb">
+              <li>
+                <a href="#section2">about</a>
+              </li>
+              <li>
+                <a href="#section3">portfolio</a>
+              </li>
+              <li>
+                <a href="#section4">skills</a>
+              </li>
+              <li>
+                <a href="#section5">contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="swiper skillsSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h4>photoshop <br>& illustrator</h4>
+              <ul class="skills_sub">
+                <li>이미지 편집 및 수정</li>
+                <li>UI & UX를 고려한 디자인</li>
+                <li>프로토타입 제작</li>
+                <li>Gtq 1급, Gtqi 2급</li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <h4>html & css & scss</h4>
+              <ul class="skills_sub">
+                <li>웹 사이트 구축 및 디자인</li>
+                <li>미디어 쿼리를 이용한 반응형 웹 제작</li>
+                <li>css animation을 활용한 모션 구현</li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <h4>java script</h4>
+              <ul class="skills_sub">
+                <li>자바스크립트 기본 문법 이해</li>
+                <li>이벤트 메소드 구현</li>
+                <li>웹 사이트 구현</li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <h4>react</h4>
+              <ul class="skills_sub">
+                <li>react 생성, 배포 가능</li>
+                <li>components 분리, 관리</li>
+                <li>styled-components를 이용한 스타일 구현</li>
+              </ul></div>
+            <div class="swiper-slide">
+              <h4>git & github</h4>
+              <ul class="skills_sub">
+                <li>git bash, VScode 사용</li>
+                <li>GitHub 를 이용한 배포</li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+            </div>
+          </div>
+          <div class="swiper_button">
+            <div class="swiper-button-prev">
+              <span class="material-symbols-outlined swiper_prev">trending_flat</span>
+            </div>  
+            <div class="swiper-button-next">
+              <span class="material-symbols-outlined swiper_next">trending_flat</span>
+            </div>
+          </div>
+        </div>
+        <div class="skills_bg_circle">circle</div>
       </div>
-      
-      <div class="swiper skillsSwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <h4>photoshop <br>& illustrator</h4>
-            <ul class="skills_sub">
-              <li>목록1</li>
-              <li>목록2</li>
-              <li>목록3</li>
-              <li>목록4</li>
-            </ul>
-          </div>
-          <div class="swiper-slide">
-            <h4>html</h4>
-            <ul class="skills_sub">
-              <li>목록1</li>
-              <li>목록2</li>
-              <li>목록3</li>
-              <li>목록4</li>
-            </ul>
-          </div>
-          <div class="swiper-slide">
-            <h4>java script</h4>
-            <ul class="skills_sub">
-              <li>목록1</li>
-              <li>목록2</li>
-              <li>목록3</li>
-              <li>목록4</li>
-            </ul>
-          </div>
-          <div class="swiper-slide">
-            <h4>react</h4>
-            <ul class="skills_sub">
-              <li>목록1</li>
-              <li>목록2</li>
-              <li>목록3</li>
-              <li>목록4</li>
-            </ul></div>
-          <div class="swiper-slide">
-            <h4>git</h4>
-            <ul class="skills_sub">
-              <li>목록1</li>
-              <li>목록2</li>
-              <li>목록3</li>
-              <li>목록4</li>
-            </ul>
-          </div>
-          <div class="swiper-slide">
-          </div>
-        </div>
-        <div class="swiper_button">
-          <div class="swiper-button-prev">
-            <span class="material-symbols-outlined swiper_prev">trending_flat</span>
-          </div>  
-          <div class="swiper-button-next">
-            <span class="material-symbols-outlined swiper_next">trending_flat</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="skills_bg_circle">circle</div>
     </section>
 
     <!-- contact -->
@@ -346,7 +392,9 @@
             <div class="bg_stars5">stars</div>
           </div>
           <div class="email_btn">
-            <p>E-mail</p></div>
+            <p>E-mail</p>
+            <span class="material-symbols-outlined">chevron_right</span>
+          </div>
         </div>
       </div>
       <div class="go_up_btn">
