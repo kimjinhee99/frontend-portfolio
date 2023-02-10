@@ -1,11 +1,11 @@
 @charset "utf-8";
 
 @font-face {
-  font-family: 'Rubik';
+  font-family: 'rubik';
   src: url('../fonts/Rubik-VariableFont_wght.woff') format('woff');
 }
 @font-face {
-  font-family: 'RubikBold';
+  font-family: 'rubikBold';
   src: url('../fonts/Rubik-ExtraBold.woff') format('woff');
 }
 @font-face {

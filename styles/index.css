@@ -10,7 +10,7 @@
 }
 
 html {
-  font-family: 'Rubik', 'cafe24Bold', sans-serif;
+  font-family: var(--rubikbold),var(--fontbold);
   text-transform: capitalize;
   letter-spacing: -3px;
 }

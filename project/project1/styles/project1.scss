@@ -1,0 +1,295 @@
+// 폰트 변수 선언
+$font: 'cafe24';
+$fontbold: 'cafe24Bold';
+$nexonfont: 'nexonRegular';
+$nexonfontbold: 'nexonBold';
+$rubikbold: 'rubikBold';
+$rubik : 'rubik';
+
+html {
+  font-family: $rubik, $font;
+  text-transform: capitalize;
+}
+body {
+  background-color: rgba(174, 208, 238, 0.2);
+  overflow-x: hidden;
+}
+
+/* header */
+header {
+  background-color: #AED0EE;
+  position: relative;
+  nav {
+    width: 100%;
+    position: fixed;
+    padding: 1vw 2.5vw;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    color: #fff;
+    z-index: 99;
+    .logo {
+      width: 80px;
+      margin-right: 3vw;
+    }
+    .menu {
+      display: flex;
+      li {
+        margin-right: 3vw;
+      }
+    }
+  }
+  /* banner */
+  .banner {
+    color: #fff;
+    font-family: $nexonfont;
+
+    .banner_bg {
+      color: #fff;
+      text-transform: uppercase;
+      font-family: $nexonfontbold;
+      font-size: 17vw;
+      font-weight: 600;
+      opacity: 0.15;
+      position: absolute;
+      bottom: 2vw; right: -50vw;
+    }
+    .banner_main_txt {
+      padding-left: 10vw;
+      padding-top: 10vw;
+      transform: translateY(5vw);
+      opacity: 0;
+      transition: 1s;
+      &.active {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      h1 {
+        font-family: $rubikbold;
+        font-weight: 700;
+        font-size: 4vw;
+        margin-bottom: 2vw;
+      }
+      .banner_mainsub_txt {
+        p {
+          font-size: 1.2rem;
+          margin-bottom: 7px;
+        }
+      }
+    }
+    .banner_explain_txt {
+      width: 34vw;
+      margin-left: 50vw;
+      font-size: 1vw;
+      transform: translateY(5vw);
+      opacity: 0;
+      transition: 1s;
+      &.active {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    .btn {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 2vw;
+      font-size: 1vw;
+      text-transform: uppercase;
+      padding-top: 7vw;
+      padding-bottom: 2vw;
+      position: relative;
+      z-index: 9;
+      a {
+        display: flex;
+        align-items: center;
+        span {
+          font-size: 0.8vw;
+        }
+      }
+      .back_btn {
+        a {
+          span {
+            transform: rotate(180deg);
+            padding-left: 0.5vw;
+          }
+        }
+      }
+      .next_btn {
+        a {
+          flex-direction: row-reverse;
+          span {
+            padding-left: 0.5vw;
+          }
+        }
+      }
+    }
+  }
+  
+}
+/* main */
+main {
+  .preview_box {
+    overflow: hidden;
+    border: 10px solid #000;
+    border-radius: 10px;
+    width: 900px; height: 550px;
+    margin: 10vw auto;
+    img.active {
+      animation: scroll 7s linear infinite;
+    }
+    @keyframes scroll {
+      100% {  
+        transform: translateY(-75%);
+      }
+    }
+  }
+  
+  .txt_box {
+    position: relative;
+    height: 600px;
+
+    .title_box{
+      background-color: #AED0EE;
+      display: inline-block;
+      border-radius: 10px;
+      text-align: center;
+      position: relative;
+      margin-left: 13vw;
+      transform: translateX(-5vw);
+      opacity: 0;
+      transition: 1s;
+      &.active {
+        transform: translateX(0);
+        opacity: 1;
+      }
+  
+      h2 {
+        color: #fff;
+        font-size: 2vw;
+        font-family: $rubikbold;
+        padding: 1.5vw 2vw;
+      }
+    }
+    .title_box::before {
+      content: "";
+      display: block;
+      border: 1px solid #fff;
+      position: absolute;
+      bottom: 13px;
+      width: 100%;
+    }
+
+    .explain_txt_box {
+      font-family: $nexonfont;
+      margin-left: 50vw;
+      position: absolute;
+      top: 2.5vw;
+      transform: translateX(5vw);
+      opacity: 0;
+      transition: 1s;
+      &.active {
+        transform: translateX(0);
+        opacity: 1;
+      }
+  
+      .explain_txt {
+        margin-bottom: 4vw;
+        h3 {
+          font-family: $fontbold;
+          font-weight: 700;
+          font-size: 1.8rem;
+          margin-bottom: 2vw;
+        }
+        .explain_sub_txt {
+          display: flex;
+          align-items: center;
+          
+          p {
+            font-size: 1.2rem;
+            width: 34vw;
+          }
+          .circle_ico {
+            border: 1px solid #000;
+            border-radius: 50%;
+            width: 15px; height: 15px;
+            position: relative;
+            margin-right: 1vw;
+          }
+          .circle_ico::before {
+            content: "";
+            display: block;
+            background-color: #3F73A2;
+            border-radius: 50%;
+            width: 15px; height: 15px;
+            position: absolute;
+            left: 2px; top: 0;
+            z-index: -1;
+          }
+          .explain_sub_title {
+            display: flex;
+            h4 {
+              font-size: 1.5vw;
+            }
+          }
+        }
+        .publishing {
+          flex-direction: column;
+          align-items: normal;
+          margin-bottom: 2vw;
+          .explain_sub_title {
+            align-items: center;
+            padding-bottom: 1.5vw;
+          }
+          ul {
+            list-style: disc;
+            padding-left: 3vw;
+            font-size: 1.3rem;
+          }
+        }
+        .problem {
+          flex-direction: column;
+          align-items: normal;
+          margin-bottom: 2vw;
+          .explain_sub_title {
+            align-items: center;
+            padding-bottom: 1.5vw;
+          }
+          ul {
+            list-style: disc;
+            padding-left: 3vw;
+            font-size: 1.3rem;
+            width: 41.5vw;
+            margin-bottom: 2vw;
+          }
+          img {
+            width: 20vw;
+          }
+        }
+        .explain_sub_txt:nth-child(3) .circle_ico::before {
+          background-color: #86B2DA;
+        }
+        .explain_sub_txt:nth-child(4) .circle_ico::before {
+          background-color: #2D4B66;
+        }
+        .explain_sub_txt:nth-child(6) .circle_ico::before {
+          background-color: #86B2DA;
+        }
+      }
+      .explain_txt:nth-child(1) .explain_sub_txt {
+        align-items: normal;
+      }
+    }
+  }
+  .txt_box:nth-child(3) {
+    height: 1050px;
+  }
+  .txt_box:nth-child(4) {
+    .title_box {
+      h2 {
+        font-size: 1.7vw;
+        padding-top: 1vw;
+      }
+    }
+  }
+}
