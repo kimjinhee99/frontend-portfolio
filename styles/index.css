@@ -674,10 +674,10 @@ h1 a img {
 .preview_bg:hover .preview_link span {
   display: block;
 }
-#portfolioImg2, #portfolioImg3, #portfolioImg4 {
+#portfolio2_box, #portfolio3_box, #portfolio4_box {
   display: none;
 }
-#portfolio1_box, #portfolio2_box, #portfolio1\3_box, #portfolio1\4_box {
+#portfolio1_box, #portfolio2_box, #portfolio3_box, #portfolio4_box {
   position: relative;
 }
 

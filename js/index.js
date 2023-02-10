@@ -69,19 +69,23 @@ title.forEach( click => {
 
 // portfolio 이미지 스크롤 애니메이션
 const portfolio1 = document.querySelector('#portfolio1');
+const portfolioBox1 = document.querySelector('#portfolio1_box');
 const portfolioImg1 = document.querySelector('#portfolioImg1');
 const portfolio2 = document.querySelector('#portfolio2');
+const portfolioBox2 = document.querySelector('#portfolio2_box');
 const portfolioImg2 = document.querySelector('#portfolioImg2');
 const portfolio3 = document.querySelector('#portfolio3');
+const portfolioBox3 = document.querySelector('#portfolio3_box');
 const portfolioImg3 = document.querySelector('#portfolioImg3');
 const portfolio4 = document.querySelector('#portfolio4');
+const portfolioBox4 = document.querySelector('#portfolio4_box');
 const portfolioImg4 = document.querySelector('#portfolioImg4');
 
 portfolio1.addEventListener('click', () => {
-  portfolioImg1.style.display = 'block';
-  portfolioImg2.style.display = 'none';
-  portfolioImg3.style.display = 'none';
-  portfolioImg4.style.display = 'none';
+  portfolioBox1.style.display = 'block';
+  portfolioBox2.style.display = 'none';
+  portfolioBox3.style.display = 'none';
+  portfolioBox4.style.display = 'none';
 
   portfolioImg1.animate (
     {
@@ -95,10 +99,10 @@ portfolio1.addEventListener('click', () => {
 });
 
 portfolio2.addEventListener('click', () => {
-  portfolioImg2.style.display = 'block';
-  portfolioImg1.style.display = 'none';
-  portfolioImg3.style.display = 'none';
-  portfolioImg4.style.display = 'none';
+  portfolioBox2.style.display = 'block';
+  portfolioBox1.style.display = 'none';
+  portfolioBox3.style.display = 'none';
+  portfolioBox4.style.display = 'none';
 
   portfolioImg2.animate (
     {
@@ -113,10 +117,10 @@ portfolio2.addEventListener('click', () => {
 });
 
 portfolio3.addEventListener('click', () => {
-  portfolioImg3.style.display = 'block';
-  portfolioImg1.style.display = 'none';
-  portfolioImg2.style.display = 'none';
-  portfolioImg4.style.display = 'none';
+  portfolioBox3.style.display = 'block';
+  portfolioBox1.style.display = 'none';
+  portfolioBox2.style.display = 'none';
+  portfolioBox4.style.display = 'none';
 
   portfolioImg3.animate (
     {
@@ -130,10 +134,10 @@ portfolio3.addEventListener('click', () => {
 });
 
 portfolio4.addEventListener('click', () => {
-  portfolioImg4.style.display = 'block';
-  portfolioImg1.style.display = 'none';
-  portfolioImg2.style.display = 'none';
-  portfolioImg3.style.display = 'none';
+  portfolioBox4.style.display = 'block';
+  portfolioBox1.style.display = 'none';
+  portfolioBox2.style.display = 'none';
+  portfolioBox3.style.display = 'none';
 
   portfolioImg4.animate (
     {
@@ -171,5 +175,3 @@ var swiper = new Swiper('.contact_cloud', {
     disableOnInteraction: true,
   },
 });
-
-// 상단 이동
