@@ -89,7 +89,7 @@ portfolio1.addEventListener('click', () => {
 
   portfolioImg1.animate (
     {
-      transform: ['translateY(-42%)']
+      transform: ['translateY(-59%)']
     },
     {
       duration: 5000,

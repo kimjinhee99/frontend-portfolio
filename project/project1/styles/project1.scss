@@ -11,38 +11,107 @@ html {
   text-transform: capitalize;
 }
 body {
-  background-color: rgba(174, 208, 238, 0.2);
+  background-color: #000;
   overflow-x: hidden;
+  line-height: 1.6;
 }
 
 /* header */
 header {
-  background-color: #AED0EE;
+  background-color: #0C2943;
   position: relative;
+
   nav {
+    font-family: $rubikbold;
     width: 100%;
     position: fixed;
     padding: 1vw 2.5vw;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-size: 1.1rem;
     color: #fff;
     z-index: 99;
+
     .logo {
       width: 80px;
       margin-right: 3vw;
     }
-    .menu {
-      display: flex;
-      li {
-        margin-right: 3vw;
+    .menu_bar {
+      position: relative;
+      /* padding-bottom: 5vw; */
+      .gnb {
+        text-align: center;
+        position: absolute;
+        top: 3.5vw; right: 0.3vw;
+        display: block;
+        z-index: 2;
+  
+        li {
+          opacity: 0;
+          font-size: 1vw;
+          margin-bottom: 0.5vw;
+          color: #4378ab;
+          letter-spacing: 0;
+          transform: translateY(-5vw);
+          transition: 0.3s;
+          cursor: pointer;
+          
+          &:after {
+            content: "";
+            display: block;
+            background-color: #4378ab;
+            width: 0px; height: 2px;
+            transition: .3s;
+          }
+          &:hover:after {
+            content: "";
+            display: block;
+            background-color: #4378ab;
+            width: 100%;
+          }
+          &:last-child {
+            line-height: 1;
+          }
+        }
+      }
+      &:hover .gnb li:nth-child(1) {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      &:hover .gnb li:nth-child(2) {
+        opacity: 1;
+        transition-delay: 0.2s;
+        transform: translateY(0);
+      }
+      &:hover .gnb li:nth-child(3) {
+        opacity: 1;
+        transition-delay: 0.4s;
+        transform: translateY(0);
+      }
+      &:hover .gnb li:nth-child(4) {
+        opacity: 1;
+        transition-delay: 0.6s;
+        transform: translateY(0);
+      }
+      span {
+        margin-right: 2vw;
+        cursor: pointer;
+        color: #4378ab;
+      }
+      .material-symbols-outlined {
+        font-size: 2.2vw;
+        line-height: 80px;
+        font-weight: 600;
       }
     }
   }
+  
   /* banner */
   .banner {
     color: #fff;
     font-family: $nexonfont;
+    position: relative;
 
     .banner_bg {
       color: #fff;
@@ -125,8 +194,24 @@ header {
       }
     }
   }
+  .banner::before {
+    content: "";
+    background: url(../images/sdf.png) no-repeat 50% / cover;
+    width: 100%; height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.3;
+  }
+  .banner::after {
+    content: "";
+    background: url(../images/sdfads.png) no-repeat 50% / cover;
+    width: 100%; height: 80%;
+    position: absolute;
+    top: 0;
+  }
   
 }
+
 /* main */
 main {
   .preview_box {
@@ -147,7 +232,8 @@ main {
   
   .txt_box {
     position: relative;
-    height: 600px;
+    height: 650px;
+    z-index: 9;
 
     .title_box{
       background-color: #AED0EE;
@@ -232,6 +318,25 @@ main {
               font-size: 1.5vw;
             }
           }
+          .color_box {
+            border-radius: 50%;
+            display: inline-block;
+            width: 5vw; height: 5vw;
+            margin: 0 1vw;
+            background-color: #2C5C8A;
+            color: #fff;
+            font-size: 0.8vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .color_box:nth-child(2) {
+            background-color: #AED0EE;
+          }
+          .color_box:nth-child(3) {
+            background-color: #FFD600;
+          }
+          
         }
         .publishing {
           flex-direction: column;
@@ -275,20 +380,40 @@ main {
         .explain_sub_txt:nth-child(6) .circle_ico::before {
           background-color: #86B2DA;
         }
-      }
-      .explain_txt:nth-child(1) .explain_sub_txt {
-        align-items: normal;
+        .keyword {
+          background-color: #fff;
+          border: 2px solid #3F73A2;
+          border-bottom-left-radius: 40px;
+          border-top-right-radius: 40px;
+          padding: 0.5vw 2vw;
+          margin: 0 0.5vw;
+          display: inline-block;
+          font-family: $fontbold;
+        }
       }
     }
+
   }
+  
+  
   .txt_box:nth-child(3) {
-    height: 1050px;
+    height: 950px;
   }
   .txt_box:nth-child(4) {
+    height: 1200px;
     .title_box {
       h2 {
         font-size: 1.7vw;
         padding-top: 1vw;
+      }
+    }
+  }
+  #project {
+    .explain_txt_box {
+      .explain_txt:first-child {
+        .explain_sub_txt {
+          align-items: normal;
+        }
       }
     }
   }

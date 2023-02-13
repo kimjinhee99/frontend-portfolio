@@ -1,3 +1,19 @@
+const body = document.querySelector('body');
+const header = document.querySelector('header');
+
+addEventListener('scroll', () => {
+  if(scrollY >= 280) {
+    body.style.backgroundColor = 'rgba(174, 208, 238, 0.2)';
+    header.style.transition = '2s';
+    header.style.backgroundColor = '#AED0EE';
+  } else {
+    body.style.transition = '2s';
+    body.style.backgroundColor = '#000';
+    header.style.transition = '2s';
+    header.style.backgroundColor = '#0C2943';
+  }
+})
+
 // 메뉴바 스크롤 이벤트
 const menuBar = document.querySelector('nav');
 const menuList = document.querySelector('.menu');
@@ -18,7 +34,7 @@ addEventListener('wheel', e => {
 addEventListener('scroll', () => {
   console.log(`scrollY: ${scrollY}`);
 
-  if (scrollY >= 700) {
+  if (scrollY >= 800) {
     menuList.style.color = '#AED0EE';
   } else {
     menuList.style.color = '#fff';
