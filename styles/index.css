@@ -923,10 +923,10 @@ h1 a img {
 }
 .contact .contact_box .contact_title .email_btn {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 0px;
   background-color: rgba(255, 255, 255, 0.5);
-  width: 200px; height: 70px;
+  width: 170px; height: 70px;
   border-radius: 40px;
   display: flex;
   justify-content: center;
@@ -967,7 +967,7 @@ h1 a img {
   transform: translateX(0.5vw);
 }
 .contact .contact_box .contact_title .email_btn span {
-  font-size: 3rem;
+  font-size: 2.5rem;
   transform: translateX(7vw);
   z-index: 9;
 
@@ -978,10 +978,10 @@ h1 a img {
 }
 .contact .contact_box .contact_title .git_btn {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 0px;
   background-color: rgba(255, 255, 255, 0.5);
-  width: 200px; height: 70px;
+  width: 170px; height: 70px;
   border-radius: 40px;
   display: flex;
   justify-content: center;
@@ -1021,7 +1021,7 @@ h1 a img {
   transform: translateX(0.5vw);
 }
 .contact .contact_box .contact_title .git_btn span {
-  font-size: 3rem;
+  font-size: 2.5rem;
   transform: translateX(7vw);
   z-index: 9;
 
