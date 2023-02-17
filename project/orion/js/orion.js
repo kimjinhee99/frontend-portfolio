@@ -102,10 +102,15 @@ const menuT = document.querySelectorAll('.menu_t');
 const menuTitle = document.querySelectorAll('.menu_title');
 
 menuTitle.forEach(click => {
-  click.addEventListener('click', e => {
-    e.currentTarget.parentNode.classList.toggle('active');
+  click.addEventListener('click', (e) => {
+    menuT.forEach(e => {
+      e.classList.remove('active');
+      e.addEventListener(('click') , (e) => {
+        e.currentTarget.classList.toggle('active');
+      });
+      });
+    });
   });
-});
 
 // 검색창
 const search = document.querySelector('.search_layer');

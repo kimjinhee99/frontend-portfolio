@@ -11,8 +11,8 @@ addEventListener('scroll', () => {
     body.style.backgroundColor = '#000';
     header.style.transition = '2s';
     header.style.backgroundColor = '#0C2943';
-  }
-})
+  };
+});
 
 // 메뉴바 스크롤 이벤트
 const menuBar = document.querySelector('nav');

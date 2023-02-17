@@ -289,11 +289,10 @@ main {
         }
         .explain_sub_txt {
           display: flex;
-          align-items: center;
+
           ul {
             li {
-              padding-left: 1vw;
-              list-style: none;
+              margin-left: 1vw;
             }
             ul {
               position: relative;
@@ -318,6 +317,7 @@ main {
             width: 34vw;
           }
           .circle_ico {
+            margin-top: 0.3vw;
             border: 1px solid #000;
             border-radius: 50%;
             width: 15px; height: 15px;
@@ -426,15 +426,6 @@ main {
   }
   .txt_box:nth-child(5) {
     height: 1050px;
-  }
-  #project {
-    .explain_txt_box {
-      .explain_txt:first-child {
-        .explain_sub_txt {
-          align-items: normal;
-        }
-      }
-    }
   }
   .view_btn {
     background-color: #AED0EE;

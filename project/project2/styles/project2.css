@@ -269,11 +269,9 @@ main .txt_box .explain_txt_box .explain_txt h3 {
 }
 main .txt_box .explain_txt_box .explain_txt .explain_sub_txt {
   display: flex;
-  align-items: center;
 }
 main .txt_box .explain_txt_box .explain_txt .explain_sub_txt ul li {
-  padding-left: 1vw;
-  list-style: none;
+  margin-left: 1vw;
 }
 main .txt_box .explain_txt_box .explain_txt .explain_sub_txt ul ul {
   position: relative;
@@ -298,6 +296,7 @@ main .txt_box .explain_txt_box .explain_txt .explain_sub_txt p {
   width: 34vw;
 }
 main .txt_box .explain_txt_box .explain_txt .explain_sub_txt .circle_ico {
+  margin-top: 0.3vw;
   border: 1px solid #000;
   border-radius: 50%;
   width: 15px;
@@ -404,9 +403,6 @@ main .txt_box:nth-child(4) .title_box h2 {
 }
 main .txt_box:nth-child(5) {
   height: 1050px;
-}
-main #project .explain_txt_box .explain_txt:first-child .explain_sub_txt {
-  align-items: normal;
 }
 main .view_btn {
   background-color: #AED0EE;
