@@ -178,7 +178,7 @@ header .banner .btn .next_btn a span {
 }
 header .banner::before {
   content: "";
-  background: url(../images/sdf.png) no-repeat 50%/cover;
+  background: url(../images/bg.png) no-repeat 50%/cover;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -187,7 +187,7 @@ header .banner::before {
 }
 header .banner::after {
   content: "";
-  background: url(../images/sdfads.png) no-repeat 50%/cover;
+  background: url(../images/stars.png) no-repeat 50%/cover;
   width: 100%;
   height: 80%;
   position: absolute;
@@ -213,7 +213,7 @@ main .preview_box img.active {
 }
 main .txt_box {
   position: relative;
-  height: 650px;
+  height: 850px;
   z-index: 9;
 }
 main .txt_box .title_box {
@@ -271,6 +271,28 @@ main .txt_box .explain_txt_box .explain_txt .explain_sub_txt {
   display: flex;
   align-items: center;
 }
+main .txt_box .explain_txt_box .explain_txt .explain_sub_txt ul li {
+  padding-left: 1vw;
+  list-style: none;
+}
+main .txt_box .explain_txt_box .explain_txt .explain_sub_txt ul ul {
+  position: relative;
+}
+main .txt_box .explain_txt_box .explain_txt .explain_sub_txt ul ul:before {
+  content: "";
+  display: block;
+  width: 0.5vw;
+  height: 0.5vw;
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.5vw;
+  left: 0vw;
+}
+main .txt_box .explain_txt_box .explain_txt .explain_sub_txt ul ul li {
+  font-size: 0.8vw;
+  list-style: none;
+}
 main .txt_box .explain_txt_box .explain_txt .explain_sub_txt p {
   font-size: 1.2rem;
   width: 34vw;
@@ -299,7 +321,7 @@ main .txt_box .explain_txt_box .explain_txt .explain_sub_txt .explain_sub_title 
   display: flex;
 }
 main .txt_box .explain_txt_box .explain_txt .explain_sub_txt .explain_sub_title h4 {
-  font-size: 1.5vw;
+  font-size: 1.2vw;
 }
 main .txt_box .explain_txt_box .explain_txt .explain_sub_txt .color_box {
   border-radius: 50%;
@@ -307,7 +329,7 @@ main .txt_box .explain_txt_box .explain_txt .explain_sub_txt .color_box {
   width: 5vw;
   height: 5vw;
   margin: 0 1vw;
-  background-color: #2C5C8A;
+  background-color: #E50112;
   color: #fff;
   font-size: 0.8vw;
   display: flex;
@@ -315,15 +337,13 @@ main .txt_box .explain_txt_box .explain_txt .explain_sub_txt .color_box {
   align-items: center;
 }
 main .txt_box .explain_txt_box .explain_txt .explain_sub_txt .color_box:nth-child(2) {
-  background-color: #AED0EE;
-}
-main .txt_box .explain_txt_box .explain_txt .explain_sub_txt .color_box:nth-child(3) {
-  background-color: #FFD600;
+  background-color: #FFFFFF;
+  color: #000;
+  border: 1px solid #000;
 }
 main .txt_box .explain_txt_box .explain_txt .publishing {
   flex-direction: column;
   align-items: normal;
-  margin-bottom: 2vw;
 }
 main .txt_box .explain_txt_box .explain_txt .publishing .explain_sub_title {
   align-items: center;
@@ -345,7 +365,7 @@ main .txt_box .explain_txt_box .explain_txt .problem .explain_sub_title {
 }
 main .txt_box .explain_txt_box .explain_txt .problem ul {
   list-style: disc;
-  padding-left: 3vw;
+  padding-left: 1vw;
   font-size: 1.3rem;
   width: 41.5vw;
   margin-bottom: 2vw;
@@ -376,11 +396,14 @@ main .txt_box:nth-child(3) {
   height: 950px;
 }
 main .txt_box:nth-child(4) {
-  height: 1200px;
+  height: 800px;
 }
 main .txt_box:nth-child(4) .title_box h2 {
   font-size: 1.7vw;
   padding-top: 1vw;
+}
+main .txt_box:nth-child(5) {
+  height: 1050px;
 }
 main #project .explain_txt_box .explain_txt:first-child .explain_sub_txt {
   align-items: normal;

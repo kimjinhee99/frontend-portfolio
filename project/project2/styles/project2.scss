@@ -196,7 +196,7 @@ header {
   }
   .banner::before {
     content: "";
-    background: url(../images/sdf.png) no-repeat 50% / cover;
+    background: url(../images/bg.png) no-repeat 50% / cover;
     width: 100%; height: 100%;
     position: absolute;
     top: 0;
@@ -204,7 +204,7 @@ header {
   }
   .banner::after {
     content: "";
-    background: url(../images/sdfads.png) no-repeat 50% / cover;
+    background: url(../images/stars.png) no-repeat 50% / cover;
     width: 100%; height: 80%;
     position: absolute;
     top: 0;
@@ -232,7 +232,7 @@ main {
   
   .txt_box {
     position: relative;
-    height: 650px;
+    height: 850px;
     z-index: 9;
 
     .title_box{
@@ -290,6 +290,28 @@ main {
         .explain_sub_txt {
           display: flex;
           align-items: center;
+          ul {
+            li {
+              padding-left: 1vw;
+              list-style: none;
+            }
+            ul {
+              position: relative;
+              &:before {
+                content: "";
+                display: block;
+                width: 0.5vw; height: 0.5vw;
+                border: 1px solid #000;
+                border-radius: 50%;
+                position: absolute;
+                top: 0.5vw; left: 0vw;
+              }
+              li {
+                font-size: 0.8vw;
+                list-style: none;
+              }
+            }
+          }
           
           p {
             font-size: 1.2rem;
@@ -315,7 +337,7 @@ main {
           .explain_sub_title {
             display: flex;
             h4 {
-              font-size: 1.5vw;
+              font-size: 1.2vw;
             }
           }
           .color_box {
@@ -323,7 +345,7 @@ main {
             display: inline-block;
             width: 5vw; height: 5vw;
             margin: 0 1vw;
-            background-color: #2C5C8A;
+            background-color: #E50112;
             color: #fff;
             font-size: 0.8vw;
             display: flex;
@@ -331,17 +353,14 @@ main {
             align-items: center;
           }
           .color_box:nth-child(2) {
-            background-color: #AED0EE;
+            background-color: #FFFFFF;
+            color: #000;
+            border: 1px solid #000;
           }
-          .color_box:nth-child(3) {
-            background-color: #FFD600;
-          }
-          
         }
         .publishing {
           flex-direction: column;
           align-items: normal;
-          margin-bottom: 2vw;
           .explain_sub_title {
             align-items: center;
             padding-bottom: 1.5vw;
@@ -362,7 +381,7 @@ main {
           }
           ul {
             list-style: disc;
-            padding-left: 3vw;
+            padding-left: 1vw;
             font-size: 1.3rem;
             width: 41.5vw;
             margin-bottom: 2vw;
@@ -392,21 +411,21 @@ main {
         }
       }
     }
-
   }
-  
-  
   .txt_box:nth-child(3) {
     height: 950px;
   }
   .txt_box:nth-child(4) {
-    height: 1200px;
+    height: 800px;
     .title_box {
       h2 {
         font-size: 1.7vw;
         padding-top: 1vw;
       }
     }
+  }
+  .txt_box:nth-child(5) {
+    height: 1050px;
   }
   #project {
     .explain_txt_box {
