@@ -180,7 +180,7 @@ header {
         a {
           span {
             transform: rotate(180deg);
-            padding-left: 0.5vw;
+            padding-left: 0.5vw;       
           }
         }
       }
@@ -229,25 +229,31 @@ main {
       }
     }
   }
-  
   .txt_box {
     position: relative;
     height: 650px;
     z-index: 9;
-
-    .title_box{
+    .title_box {
       background-color: #AED0EE;
       display: inline-block;
       border-radius: 10px;
       text-align: center;
       position: relative;
-      margin-left: 13vw;
+      margin-left: 15vw;
       transform: translateX(-5vw);
       opacity: 0;
       transition: 1s;
       &.active {
         transform: translateX(0);
         opacity: 1;
+      }
+      &::before {
+        content: "";
+        display: block;
+        border: 1px solid #fff;
+        position: absolute;
+        bottom: 13px;
+        width: 100%;
       }
   
       h2 {
@@ -257,15 +263,8 @@ main {
         padding: 1.5vw 2vw;
       }
     }
-    .title_box::before {
-      content: "";
-      display: block;
-      border: 1px solid #fff;
-      position: absolute;
-      bottom: 13px;
-      width: 100%;
-    }
-
+  }
+  #project {
     .explain_txt_box {
       font-family: $nexonfont;
       margin-left: 50vw;
@@ -278,9 +277,16 @@ main {
         transform: translateX(0);
         opacity: 1;
       }
-  
       .explain_txt {
         margin-bottom: 4vw;
+        &:first-child {
+          .explain_sub_txt {
+            align-items: normal;
+            .circle_ico {
+              margin-top: 0.5vw;
+            }
+          }
+        }
         h3 {
           font-family: $fontbold;
           font-weight: 700;
@@ -301,21 +307,66 @@ main {
             width: 15px; height: 15px;
             position: relative;
             margin-right: 1vw;
+            &::before {
+              content: "";
+              display: block;
+              background-color: #3F73A2;
+              border-radius: 50%;
+              width: 15px; height: 15px;
+              position: absolute;
+              left: 2px; top: 0;
+              z-index: -1;
+            }
           }
-          .circle_ico::before {
-            content: "";
-            display: block;
-            background-color: #3F73A2;
+          
+        }
+      }
+    }
+  }
+  #design {
+    height: 950px;
+    .explain_txt_box {
+      font-family: $nexonfont;
+      margin-left: 50vw;
+      position: absolute;
+      top: 2.5vw;
+      transform: translateX(5vw);
+      opacity: 0;
+      transition: 1s;
+      &.active {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      .explain_txt {
+        margin-bottom: 4vw;
+        h3 {
+          font-family: $fontbold;
+          font-weight: 700;
+          font-size: 1.8rem;
+          margin-bottom: 2vw;
+        }
+        .explain_sub_txt {
+          display: flex;
+          align-items: center;
+          p {
+            font-size: 1.2rem;
+            width: 34vw;
+          }
+          .circle_ico {
+            border: 1px solid #000;
             border-radius: 50%;
             width: 15px; height: 15px;
-            position: absolute;
-            left: 2px; top: 0;
-            z-index: -1;
-          }
-          .explain_sub_title {
-            display: flex;
-            h4 {
-              font-size: 1.5vw;
+            position: relative;
+            margin-right: 1vw;
+            &::before {
+              content: "";
+              display: block;
+              background-color: #3F73A2;
+              border-radius: 50%;
+              width: 15px; height: 15px;
+              position: absolute;
+              left: 2px; top: 0;
+              z-index: -1;
             }
           }
           .color_box {
@@ -329,56 +380,13 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;
+            &:nth-child(2) {
+              background-color: #AED0EE;
+            }
+            &:nth-child(3) {
+              background-color: #FFD600;
+            }
           }
-          .color_box:nth-child(2) {
-            background-color: #AED0EE;
-          }
-          .color_box:nth-child(3) {
-            background-color: #FFD600;
-          }
-          
-        }
-        .publishing {
-          flex-direction: column;
-          align-items: normal;
-          margin-bottom: 2vw;
-          .explain_sub_title {
-            align-items: center;
-            padding-bottom: 1.5vw;
-          }
-          ul {
-            list-style: disc;
-            padding-left: 3vw;
-            font-size: 1.3rem;
-          }
-        }
-        .problem {
-          flex-direction: column;
-          align-items: normal;
-          margin-bottom: 2vw;
-          .explain_sub_title {
-            align-items: center;
-            padding-bottom: 1.5vw;
-          }
-          ul {
-            list-style: disc;
-            padding-left: 3vw;
-            font-size: 1.3rem;
-            width: 41.5vw;
-            margin-bottom: 2vw;
-          }
-          img {
-            width: 20vw;
-          }
-        }
-        .explain_sub_txt:nth-child(3) .circle_ico::before {
-          background-color: #86B2DA;
-        }
-        .explain_sub_txt:nth-child(4) .circle_ico::before {
-          background-color: #2D4B66;
-        }
-        .explain_sub_txt:nth-child(6) .circle_ico::before {
-          background-color: #86B2DA;
         }
         .keyword {
           background-color: #fff;
@@ -392,27 +400,136 @@ main {
         }
       }
     }
-
   }
-  
-  
-  .txt_box:nth-child(3) {
-    height: 950px;
-  }
-  .txt_box:nth-child(4) {
+  #publishing {
     height: 1200px;
+    .explain_txt_box {
+      font-family: $nexonfont;
+      margin-left: 50vw;
+      position: absolute;
+      top: 2.5vw;
+      transform: translateX(5vw);
+      opacity: 0;
+      transition: 1s;
+      &.active {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      .explain_txt {
+        margin-bottom: 4vw;
+        h3 {
+          font-family: $fontbold;
+          font-weight: 700;
+          font-size: 1.8rem;
+          margin-bottom: 2vw;
+        }
+        .explain_sub_txt {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          align-items: normal;
+          margin-bottom: 2vw;
+          .explain_sub_title {
+            display: flex;
+            align-items: center;
+            padding-bottom: 1.5vw;
+            .circle_ico {
+              border: 1px solid #000;
+              border-radius: 50%;
+              width: 15px; height: 15px;
+              position: relative;
+              margin-right: 1vw;
+              &::before {
+                content: "";
+                display: block;
+                background-color: #3F73A2;
+                border-radius: 50%;
+                width: 15px; height: 15px;
+                position: absolute;
+                left: 2px; top: 0;
+                z-index: -1;
+              }
+            }
+            h4 {
+              font-size: 1.5vw;
+            }
+          }
+          ul {
+            list-style: disc;
+            padding-left: 3vw;
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+  #problem {
     .title_box {
       h2 {
         font-size: 1.7vw;
         padding-top: 1vw;
       }
     }
-  }
-  #project {
     .explain_txt_box {
-      .explain_txt:first-child {
+      font-family: $nexonfont;
+      margin-left: 50vw;
+      position: absolute;
+      top: 2.5vw;
+      transform: translateX(5vw);
+      opacity: 0;
+      transition: 1s;
+      &.active {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      .explain_txt {
+        margin-bottom: 4vw;
+        h3 {
+          font-family: $fontbold;
+          font-weight: 700;
+          font-size: 1.8rem;
+          margin-bottom: 2vw;
+        }
         .explain_sub_txt {
+          display: flex;
+          flex-direction: column;
           align-items: normal;
+          margin-bottom: 2vw;
+          .explain_sub_title {
+            display: flex;
+            align-items: center;
+            padding-bottom: 1.5vw;
+            .circle_ico {
+              border: 1px solid #000;
+              border-radius: 50%;
+              width: 15px; height: 15px;
+              position: relative;
+              margin-right: 1vw;
+              &::before {
+                content: "";
+                display: block;
+                background-color: #3F73A2;
+                border-radius: 50%;
+                width: 15px; height: 15px;
+                position: absolute;
+                left: 2px; top: 0;
+                z-index: -1;
+              }
+            }
+            h4 {
+              font-size: 1.5vw;
+            }
+          }
+          ul {
+            list-style: disc;
+            padding-left: 3vw;
+            font-size: 1.3rem;
+            width: 41.5vw;
+            margin-bottom: 2vw;
+          }
+          img {
+            width: 20vw;
+          }
         }
       }
     }
