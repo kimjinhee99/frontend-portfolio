@@ -440,7 +440,7 @@ main #publishing .explain_txt_box .explain_txt .explain_sub_txt .explain_sub_tit
   font-size: 1.2vw;
 }
 main #problem {
-  height: 1050px;
+  height: 50vw;
 }
 main #problem .explain_txt_box {
   font-family: "nexonRegular";
@@ -470,11 +470,9 @@ main #problem .explain_txt_box .explain_txt .explain_sub_txt {
   align-items: normal;
   margin-bottom: 2vw;
 }
-main #problem .explain_txt_box .explain_txt .explain_sub_txt ul li {
-  margin-left: 1vw;
-}
 main #problem .explain_txt_box .explain_txt .explain_sub_txt ul ul {
   position: relative;
+  margin-left: 1vw;
 }
 main #problem .explain_txt_box .explain_txt .explain_sub_txt ul ul:before {
   content: "";
@@ -484,8 +482,8 @@ main #problem .explain_txt_box .explain_txt .explain_sub_txt ul ul:before {
   border: 1px solid #000;
   border-radius: 50%;
   position: absolute;
-  top: 0.5vw;
-  left: 0vw;
+  top: 0.4vw;
+  left: -0.8vw;
 }
 main #problem .explain_txt_box .explain_txt .explain_sub_txt ul ul li {
   font-size: 0.8vw;

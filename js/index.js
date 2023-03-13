@@ -106,7 +106,7 @@ portfolio2.addEventListener('click', () => {
 
   portfolioImg2.animate (
     {
-      transform: ['translateY(-42%)']
+      transform: ['translateY(-63%)']
     },
     {
       duration: 5000,
@@ -124,7 +124,7 @@ portfolio3.addEventListener('click', () => {
 
   portfolioImg3.animate (
     {
-      transform: ['translateY(-42%)']
+      transform: ['translateY(-73%)']
     },
     {
       duration: 5000,
@@ -141,10 +141,10 @@ portfolio4.addEventListener('click', () => {
 
   portfolioImg4.animate (
     {
-      transform: ['translateY(-42%)']
+      transform: ['translateY(-85%)']
     },
     {
-      duration: 5000,
+      duration: 8000,
       iterations: Infinity,
     }
   );

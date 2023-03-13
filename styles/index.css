@@ -530,11 +530,11 @@ h1 a img {
 .portfolio .portfolio_list_box .portfolio_list li:nth-child(2) .list_icon {
   left: 9.5vw;
 }
-.portfolio .portfolio_list_box .portfolio_list li:nth-child(3) .list_icon {
+/* .portfolio .portfolio_list_box .portfolio_list li:nth-child(3) .list_icon {
   left: 22.5vw;
-}
+} */
 .portfolio .portfolio_list_box .portfolio_list li:nth-child(4) .list_icon {
-  left: 7.5vw;
+  left: 9vw;
 }
 .portfolio .portfolio_list_box .portfolio_list li:hover .list_icon {
   opacity: 1;
