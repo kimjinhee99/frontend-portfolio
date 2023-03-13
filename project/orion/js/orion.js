@@ -127,3 +127,11 @@ searchClose.addEventListener('click', () => {
 menusearchIcon.addEventListener('click', () => {
   search.classList.add('active');
 });
+
+// 푸터 패밀리 사이트
+const familySite = document.querySelector('.site_search');
+const familySiteSide = document.querySelector('.site_search>ul');
+
+familySite.addEventListener('click', () => {
+  familySiteSide.classList.toggle('active');
+});
