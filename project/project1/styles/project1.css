@@ -446,7 +446,7 @@ main #publishing .explain_txt_box .explain_txt .explain_sub_txt .explain_sub_tit
 main #publishing .explain_txt_box .explain_txt .explain_sub_txt ul {
   list-style: disc;
   padding-left: 3vw;
-  font-size: 1.3rem;
+  font-size: 1vw;
 }
 main #problem .title_box h2 {
   font-size: 1.7vw;
@@ -511,7 +511,7 @@ main #problem .explain_txt_box .explain_txt .explain_sub_txt .explain_sub_title 
 main #problem .explain_txt_box .explain_txt .explain_sub_txt ul {
   list-style: disc;
   padding-left: 3vw;
-  font-size: 1.3rem;
+  font-size: 1vw;
   width: 41.5vw;
   margin-bottom: 2vw;
 }

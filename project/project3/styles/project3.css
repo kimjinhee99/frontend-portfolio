@@ -356,7 +356,7 @@ main #process .explain_txt_box .explain_txt .explain_sub_txt .explain_sub_title 
   z-index: -1;
 }
 main #process .explain_txt_box .explain_txt .explain_sub_txt .explain_sub_title h4 {
-  font-size: 1.2vw;
+  font-size: 1vw;
 }
 main #business {
   height: 800px;
@@ -419,7 +419,7 @@ main #business .explain_txt_box .explain_txt .explain_sub_txt .explain_sub_title
   z-index: -1;
 }
 main #business .explain_txt_box .explain_txt .explain_sub_txt .explain_sub_title h4 {
-  font-size: 1.2vw;
+  font-size: 1vw;
 }
 main #problem {
   height: 50vw;
@@ -455,7 +455,7 @@ main #problem .explain_txt_box .explain_txt .explain_sub_txt {
 main #problem .explain_txt_box .explain_txt .explain_sub_txt ul ul {
   position: relative;
   margin-left: 1vw;
-  font-size: 1.2vw;
+  font-size: 1vw;
 }
 main #problem .explain_txt_box .explain_txt .explain_sub_txt ul ul:before {
   content: "";
@@ -469,7 +469,7 @@ main #problem .explain_txt_box .explain_txt .explain_sub_txt ul ul:before {
   left: -0.8vw;
 }
 main #problem .explain_txt_box .explain_txt .explain_sub_txt ul ul li {
-  font-size: 1vw;
+  font-size: 0.9vw;
   list-style: none;
 }
 main #problem .explain_txt_box .explain_txt .explain_sub_txt .explain_sub_title {
