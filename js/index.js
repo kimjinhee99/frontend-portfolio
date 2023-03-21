@@ -153,12 +153,17 @@ portfolio4.addEventListener('click', () => {
 /* -------- skills ------- */
 // 스와이퍼
 var swiper = new Swiper(".skillsSwiper", {
-  slidesPerView: 4,
+  slidesPerView: 1.5,
   spaceBetween: 30,
   loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    1280: {
+      slidesPerView: 4,
+    },
   },
 });
 
