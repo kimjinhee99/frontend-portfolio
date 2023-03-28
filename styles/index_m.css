@@ -90,7 +90,7 @@ h3:after {
 .menu_bar .gnb {
   text-align: center;
   position: absolute;
-  top: 10.5vw; 
+  top: 11.5vw; 
   right: 1vw;
   display: block;
   z-index: 2;
@@ -116,7 +116,7 @@ h3:after {
   content: "";
   display: block;
   background-color: var(--color1);
-  width: 60px;
+  width: 9vw;
 }
 
 .section {
@@ -169,7 +169,7 @@ h1 a img {
   position: relative;
   padding-left: 10vw;
   font-weight: bold;
-  top: 10vw;
+  top: 23vw;
 }
 .header .banner .banner_title .title_top,
 .header .banner .banner_title .title_bottom {
@@ -213,7 +213,7 @@ h1 a img {
 }
 .header .banner .aladin {
   position: absolute;
-  right: 3vw; top: 18vw;
+  right: 3vw; top: 32vw;
   animation: aladin 3s linear infinite backwards;
 }
 @keyframes aladin {
@@ -243,19 +243,19 @@ h1 a img {
 .header .banner .monkey_star .monkey {
   width: 20VW;
   position: absolute;
-  left: 2.5vw; bottom: -40vw;
+  left: 2.5vw; bottom: -50vw;
 }
 .header .banner .monkey_star .star {
   width: 20vw;
   position: absolute;
-  left: 0.3vw; bottom: -55vw;
+  left: 0.3vw; bottom: -65vw;
   transition: 10s;
 }
 .header.active .banner .title_star {
   background: url(../images/sfef.gif) no-repeat 50% / cover;
   position: absolute;
-  width: 65vw; height: 800px;
-  top: 5vw; left: 22vw;
+  width: 77vw; height: 800px;
+  top: 5vw; left: 10vw;
 }
 .header .banner_bg .bg_j {
   position: absolute;
@@ -297,7 +297,7 @@ h1 a img {
   z-index: -2;
 }
 .header .arrow_down {
-  height: 5vw;
+  height: 10vw;
   display: inline-block;
 }
 
@@ -305,7 +305,7 @@ h1 a img {
   font-size: 5vw;
   font-weight: 500;
   position: absolute;
-  left: 45vw; bottom: 5vw;
+  left: 45vw; bottom: 10vw;
   /* height: 100px; */
   animation: arrow 2s linear infinite backwards;
 }
