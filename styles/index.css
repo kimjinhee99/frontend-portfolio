@@ -167,11 +167,11 @@
     position: relative;
     padding-left: 23vw;
     font-weight: bold;
-    top: -1vw;
+    top: -2vw;
   }
   .header .banner .banner_title .title_top,
   .header .banner .banner_title .title_bottom {
-    font-size: 21vw;
+    font-size: 20vw;
     color: transparent;
     position: relative;
     display: inline-block;
@@ -182,7 +182,7 @@
   .header .banner .banner_title .title_bottom {
     padding-left: 23VW;
     position: absolute;
-    top: 18vw;
+    top: 20vw;
   }
   .header .banner .banner_title .title_top::after {
     content: "Port";
@@ -205,13 +205,13 @@
     font-size: 1.1vw;
     letter-spacing: 0;
     position: absolute;
-    top: 20.5vw; left: 35vw;
+    top: 21.5vw; left: 35vw;
     font-family: var(--font);
     /* font-weight: 500; */
   }
   .header .banner .aladin {
     position: absolute;
-    right: 12vw; top: -5vw;
+    right: 12vw; top: -2vw;
     animation: aladin 3s linear infinite backwards;
   }
   @keyframes aladin {
@@ -226,7 +226,7 @@
     }
   }
   .header .banner .aladin img {
-    width: 22vw;
+    width: 20vw;
   }
   .header .banner .monkey_star {
     width: 100px;
@@ -241,24 +241,24 @@
   .header .banner .monkey_star .monkey {
     width: 13VW;
     position: absolute;
-    left: 0; bottom: -8vw;
+    left: 0; bottom: -9vw;
   }
   .header .banner .monkey_star .star {
-    width: 10vw;
+    width: 12vw;
     position: absolute;
-    left: 0.3vw; bottom: -15vw;
+    left: -1vw; bottom: -18vw;
     transition: 3s;
   }
   .header.active .banner .title_star {
     background: url(../images/sfef.gif) no-repeat 50% / cover;
     position: absolute;
-    width: 65vw; height: 700px;
-    top: 0vw; left: 19vw;
+    width: 65vw; height: 600px;
+    top: 5vw; left: 19vw;
   }
   .header .banner_bg .bg_j {
     position: absolute;
     top: -13vw; left: -4.2vw;
-    font-size: 47vw;
+    font-size: 42vw;
     font-weight: 500;
     color: #a0c3d2;
     z-index: -2;
@@ -266,8 +266,8 @@
   }
   .header .banner_bg .bg_h {
     position: absolute;
-    top: 12vw; right: -5.5vw;
-    font-size: 47vw;
+    top: 23vw; right: -5.5vw;
+    font-size: 42vw;
     font-weight: 500;
     color: #a0c3d2;
     z-index: -2;
@@ -303,7 +303,7 @@
     font-size: 2vw;
     font-weight: 500;
     position: absolute;
-    left: 50vw; top: 44.5vw;
+    left: 50vw; top: 45.5vw;
     /* height: 100px; */
     animation: arrow 2s linear infinite backwards;
   }
@@ -335,10 +335,10 @@
     transform: translateY(0vw);
     opacity: 1;
     transition: 1.5s;
+    padding-top: 6vw;
   }
-  
   .about_box .my_photo {
-    width: 24.5vw;
+    max-width: 30vw;
   }
   .about_box .about_txt_box {
     width: 47vw;
@@ -392,38 +392,38 @@
     position: relative;
     margin-left: 1vw;
   }
-  .about_box .about_txt_box .about_txt p::after {
+  .about_box .about_txt_box .about_txt p .pink::after {
     content: "";
     display: block;
-    width: 0px;  height: 0.4vw;
+    width: 0px;  height: 0.3vw;
     background-color: #F2C0C1;
     border-radius: 40px;
     position: absolute;
-    top: 5.5vw; right: 2.6vw;
+    top: 20px; right: -4px;
     transition: 1s;
   }
-  .about.active .about_box .about_txt_box .about_txt p::after {
-    width: 6.7vw;
+  .about.active .about_box .about_txt_box .about_txt p .pink::after {
+    width: 7vw;
     transition-delay: 1.5s;
   }
-  .about_box .about_txt_box .about_txt p::before {
+  .about_box .about_txt_box .about_txt p .yellow::before {
     content: "";
     display: block;
-    width: 0;  height: 2vw;
+    width: 0;  height: 1.8vw;
     background-color: #FFEA79;
     border-radius: 40px;
     position: absolute;
-    top: 7.9vw; left: -0.5vw;
+    top: -5px; left: -10px;
     z-index: -1;
     opacity: 0.7;
     transition: 1s;
   }
-  .about.active .about_box .about_txt_box .about_txt p::before {
+  .about.active .about_box .about_txt_box .about_txt p .yellow::before {
     width: 11vw;
     transition-delay: 2s;
   }
   .about_box .about_txt_box .tag {
-    width: 28vw;
+    width: 35vw;
     padding-left: 2.5vw;
     letter-spacing: 0px;
     margin-top: 2vw;
@@ -439,7 +439,7 @@
     padding: 0.5vw 1vw;
     margin: 0 0.3vw;
     font-family: var(--fontbold);
-    font-size: 0.8vw;
+    font-size: 1vw;
   }
   .about_box .about_txt_box .tag .taglist li:hover {
     background: #3f73a2;
@@ -458,7 +458,7 @@
     top: -38vw; right: -2vw;
   }
   .about.active .about_bg {
-    top: 11vw;
+    top: 20vw;
     transition: 1.5s;
     transition-delay: .5s;
   }
@@ -475,12 +475,12 @@
     /* margin: 50px 0; */
     transform: translateY(10vw);
     opacity: 0;
-    padding-top: 0;
   }
   .portfolio.active .portfolio_list_box {
     transform: translateY(0vw);
     opacity: 1;
     transition: 1.5s;
+    padding-top: 0vw;
   }
   .portfolio .portfolio_list_box .portfolio_list {
     margin-right: 3vw;
@@ -555,7 +555,9 @@
   }
   .portfolio .portfolio_list_box .portfolio_preview .preview_box {
     border: 3px solid #000;
-    width: 32vw; height: 32vw;
+    width: 50vw; height: 45vw;
+    max-width: 600px;
+    max-height: 600px;
     /* text-indent: -9999px; */
     overflow: hidden;
     position: relative;
@@ -649,7 +651,7 @@
   .portfolio .portfolio_list_box .portfolio_list .sub_explain.active li {
     font-family: 'Rubik', sans-serif;
     display: inline;
-    font-size: 0.8vw;
+    font-size: 1vw;
     font-weight: 200;
     border: none;
     padding: 0;
@@ -668,8 +670,8 @@
   }
   .preview_link span {
     position: absolute;
-    top: 11vw; left: 11vw;
-    font-size: 9vw;
+    top: 210px; left: 220px;
+    font-size: 7rem;
     color: #fff;
     display: none;
     border: 3px solid #fff;
@@ -1035,7 +1037,7 @@
   }
   .contact .go_up_btn {
     position: absolute;
-    bottom: 50px; right: 50px;
+    top: 45vw; right: 50px;
     background-color: #fff;
     border-radius: 50%;
     width: 40px; height: 40px;
