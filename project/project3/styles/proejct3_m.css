@@ -140,7 +140,7 @@ header .banner .banner_explain_txt {
   width: 48vw;
   padding-top: 15vw;
   margin-left: 40vw;
-  font-size: 2vw;
+  font-size: 1.5vw;
   transform: translateY(5vw);
   opacity: 0;
   transition: 1s;
@@ -332,7 +332,6 @@ main #process .explain_txt_box .explain_txt .explain_sub_txt {
   display: flex;
   flex-direction: column;
   align-items: normal;
-  padding-right: 3vw;
 }
 main #process .explain_txt_box .explain_txt .explain_sub_txt .explain_sub_title {
   display: flex;
@@ -346,7 +345,6 @@ main #process .explain_txt_box .explain_txt .explain_sub_txt .explain_sub_title 
   height: 15px;
   position: relative;
   margin-right: 1vw;
-  padding-right: 3vw;
 }
 main #process .explain_txt_box .explain_txt .explain_sub_txt .explain_sub_title .circle_ico::before {
   content: "";
@@ -455,7 +453,6 @@ main #problem .explain_txt_box .explain_txt .explain_sub_txt {
   flex-direction: column;
   align-items: normal;
   margin-bottom: 2vw;
-  padding-right: 3vw;
 }
 main #problem .explain_txt_box .explain_txt .explain_sub_txt ul ul {
   position: relative;
@@ -559,4 +556,4 @@ main .view_btn:hover::after {
   opacity: 1;
 }
 
-/*# sourceMappingURL=project3_m.css.map */
+/*# sourceMappingURL=proejct3_m.css.map */

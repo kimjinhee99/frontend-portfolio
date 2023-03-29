@@ -468,9 +468,13 @@
     align-items: normal;
     margin-bottom: 2vw;
   }
+  main #problem .explain_txt_box .explain_txt .explain_sub_txt ul li {
+    font-size: 1vw;
+  }
   main #problem .explain_txt_box .explain_txt .explain_sub_txt ul ul {
     position: relative;
     margin-left: 1vw;
+    font-size: 1.4rem;
   }
   main #problem .explain_txt_box .explain_txt .explain_sub_txt ul ul:before {
     content: "";
@@ -480,11 +484,11 @@
     border: 1px solid #000;
     border-radius: 50%;
     position: absolute;
-    top: 0.4vw;
+    top: 10px;
     left: -0.8vw;
   }
   main #problem .explain_txt_box .explain_txt .explain_sub_txt ul ul li {
-    font-size: 0.8vw;
+    font-size: 1.2rem;
     list-style: none;
   }
   main #problem .explain_txt_box .explain_txt .explain_sub_txt .explain_sub_title {
@@ -514,7 +518,7 @@
     z-index: -1;
   }
   main #problem .explain_txt_box .explain_txt .explain_sub_txt .explain_sub_title h4 {
-    font-size: 1.2vw;
+    font-size: 1.8rem;
   }
   main .view_btn {
     background-color: #AED0EE;

@@ -37,14 +37,14 @@
   header nav .menu_bar .gnb {
     text-align: center;
     position: absolute;
-    top: 8vw;
-    right: 0.3vw;
+    top: 70px;
+    right: 12px;
     display: block;
     z-index: 2;
   }
   header nav .menu_bar .gnb li {
     opacity: 0;
-    font-size: 1.8vw;
+    font-size: 1rem;
     margin-bottom: 0.5vw;
     color: #4378ab;
     letter-spacing: 0;
@@ -89,12 +89,11 @@
     transform: translateY(0);
   }
   header nav .menu_bar span {
-    margin-right: 3vw;
     cursor: pointer;
     color: #4378ab;
   }
   header nav .menu_bar .material-symbols-outlined {
-    font-size: 4vw;
+    font-size: 2.5rem;
     line-height: 80px;
     font-weight: 600;
   }
@@ -116,7 +115,7 @@
   }
   header .banner .banner_main_txt {
     padding-left: 10vw;
-    padding-top: 20vw;
+    padding-top: 15vw;
     transform: translateY(5vw);
     opacity: 0;
     transition: 1s;
@@ -128,18 +127,18 @@
   header .banner .banner_main_txt h1 {
     font-family: "rubikBold";
     font-weight: 700;
-    font-size: 5vw;
+    font-size: 4rem;
     margin-bottom: 2vw;
   }
   header .banner .banner_main_txt .banner_mainsub_txt p {
-    font-size: 2.5vw;
+    font-size: 1.3rem;
     margin-bottom: 7px;
   }
   header .banner .banner_explain_txt {
     width: 46vw;
     padding-top: 10vw;
     margin-left: 40vw;
-    font-size: 1.8vw;
+    font-size: 1rem;
     transform: translateY(5vw);
     opacity: 0;
     transition: 1s;
@@ -198,8 +197,8 @@
     overflow: hidden;
     border: 10px solid #000;
     border-radius: 10px;
-    width: 400px;
-    height: 450px;
+    width: 500px;
+    height: 550px;
     margin: 10vw auto;
   }
   main .preview_box img.active {
@@ -212,7 +211,7 @@
   }
   main .txt_box {
     position: relative;
-    height: 60vw;
+    height: 650px;
     z-index: 9;
   }
   main .txt_box .title_box {
@@ -240,12 +239,12 @@
   }
   main .txt_box .title_box h2 {
     color: #fff;
-    font-size: 3vw;
+    font-size: 1.8rem;
     font-family: "rubikBold";
     padding: 1.5vw 2vw;
   }
   main #project {
-    height: 80vw;
+    height: 900px;
   }
   main #project .explain_txt_box {
     font-family: "nexonRegular";
@@ -266,14 +265,14 @@
   main #project .explain_txt_box .explain_txt h3 {
     font-family: "cafe24Bold";
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 2rem;
     margin-bottom: 2vw;
   }
   main #project .explain_txt_box .explain_txt .explain_sub_txt {
     display: flex;
   }
   main #project .explain_txt_box .explain_txt .explain_sub_txt p {
-    font-size: 2vw;
+    font-size: 1.2rem;
     width: 54vw;
   }
   main #project .explain_txt_box .explain_txt .explain_sub_txt .circle_ico {
@@ -298,10 +297,10 @@
     z-index: -1;
   }
   main #process {
-    height: 50vw;
+    height: 600px;
   }
   main #process .title_box h2 {
-    font-size: 3vw;
+    font-size: 2rem;
     padding: 1.5vw 2vw;
   }
   main #process .explain_txt_box {
@@ -323,7 +322,7 @@
   main #process .explain_txt_box .explain_txt h3 {
     font-family: "cafe24Bold";
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 2rem;
     margin-bottom: 2vw;
   }
   main #process .explain_txt_box .explain_txt .explain_sub_txt {
@@ -344,6 +343,7 @@
     height: 15px;
     position: relative;
     margin-right: 1vw;
+    padding: 0;
   }
   main #process .explain_txt_box .explain_txt .explain_sub_txt .explain_sub_title .circle_ico::before {
     content: "";
@@ -358,13 +358,13 @@
     z-index: -1;
   }
   main #process .explain_txt_box .explain_txt .explain_sub_txt .explain_sub_title h4 {
-    font-size: 2vw;
+    font-size: 1.2rem;
   }
   main #business {
-    height: 50vw;
+    height: 500px;
   }
   main #business .title_box h2 {
-    font-size: 3vw;
+    font-size: 2rem;
     padding: 1.5vw 2vw;
   }
   main #business .explain_txt_box {
@@ -386,7 +386,7 @@
   main #business .explain_txt_box .explain_txt h3 {
     font-family: "cafe24Bold";
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 2rem;
     margin-bottom: 2vw;
   }
   main #business .explain_txt_box .explain_txt .explain_sub_txt {
@@ -421,13 +421,13 @@
     z-index: -1;
   }
   main #business .explain_txt_box .explain_txt .explain_sub_txt .explain_sub_title h4 {
-    font-size: 2vw;
+    font-size: 1.2rem;
   }
   main #problem {
-    height: 100vw;
+    height: 1100px;
   }
   main #problem h2 {
-    font-size: 2.7vw;
+    font-size: 1.8rem;
   }
   main #problem .explain_txt_box {
     font-family: "nexonRegular";
@@ -448,7 +448,7 @@
   main #problem .explain_txt_box .explain_txt h3 {
     font-family: "cafe24Bold";
     font-weight: 700;
-    font-size: 3vw;
+    font-size: 2rem;
     margin-bottom: 2vw;
   }
   main #problem .explain_txt_box .explain_txt .explain_sub_txt {
@@ -457,17 +457,20 @@
     align-items: normal;
     margin-bottom: 2vw;
   }
+  main #problem .explain_txt_box .explain_txt .explain_sub_txt ul li {
+    font-size: 1.3rem;
+  }
   main #problem .explain_txt_box .explain_txt .explain_sub_txt ul ul {
     position: relative;
     margin-left: 1vw;
-    font-size: 2.2vw;
+    font-size: 1.3rem;
     margin-left: 2vw;
   }
   main #problem .explain_txt_box .explain_txt .explain_sub_txt ul ul:before {
     content: "";
     display: block;
-    width: 1.5vw;
-    height: 1.5vw;
+    width: 12px;
+    height: 12px;
     border: 1px solid #000;
     border-radius: 50%;
     position: absolute;
@@ -475,7 +478,7 @@
     left: -2vw;
   }
   main #problem .explain_txt_box .explain_txt .explain_sub_txt ul ul li {
-    font-size: 1.8vw;
+    font-size: 1.2rem;
     list-style: none;
   }
   main #problem .explain_txt_box .explain_txt .explain_sub_txt .explain_sub_title {
@@ -505,7 +508,7 @@
     z-index: -1;
   }
   main #problem .explain_txt_box .explain_txt .explain_sub_txt .explain_sub_title h4 {
-    font-size: 2.5vw;
+    font-size: 1.8rem;
   }
   main .view_btn {
     background-color: #AED0EE;
@@ -521,7 +524,7 @@
   }
   main .view_btn p {
     color: #fff;
-    font-size: 3.5vw;
+    font-size: 2rem;
     font-family: "rubikBold";
     padding: 1.5vw 2vw;
   }

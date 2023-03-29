@@ -127,18 +127,18 @@
   header .banner .banner_main_txt h1 {
     font-family: "rubikBold";
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 5vw;
     margin-bottom: 2vw;
   }
   header .banner .banner_main_txt .banner_mainsub_txt p {
-    font-size: 1.3rem;
+    font-size: 2.5vw;
     margin-bottom: 7px;
   }
   header .banner .banner_explain_txt {
     width: 46vw;
     padding-top: 10vw;
     margin-left: 40vw;
-    font-size: 1rem;
+    font-size: 1.8vw;
     transform: translateY(5vw);
     opacity: 0;
     transition: 1s;
@@ -197,8 +197,8 @@
     overflow: hidden;
     border: 10px solid #000;
     border-radius: 10px;
-    width: 500px;
-    height: 550px;
+    width: 400px;
+    height: 450px;
     margin: 10vw auto;
   }
   main .preview_box img.active {
@@ -211,7 +211,7 @@
   }
   main .txt_box {
     position: relative;
-    height: 650px;
+    height: 70vw;
     z-index: 9;
   }
   main .txt_box .title_box {
@@ -239,7 +239,7 @@
   }
   main .txt_box .title_box h2 {
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 3vw;
     font-family: "rubikBold";
     padding: 1.5vw 2vw;
   }
@@ -262,14 +262,14 @@
   main #project .explain_txt_box .explain_txt h3 {
     font-family: "cafe24Bold";
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 3vw;
     margin-bottom: 2vw;
   }
   main #project .explain_txt_box .explain_txt .explain_sub_txt {
     display: flex;
   }
   main #project .explain_txt_box .explain_txt .explain_sub_txt p {
-    font-size: 1.2rem;
+    font-size: 2vw;
     width: 54vw;
   }
   main #project .explain_txt_box .explain_txt .explain_sub_txt .circle_ico {
@@ -294,7 +294,7 @@
     z-index: -1;
   }
   main #design {
-    height: 900px;
+    height: 90vw;
   }
   main #design .explain_txt_box {
     font-family: "nexonRegular";
@@ -315,14 +315,14 @@
   main #design .explain_txt_box .explain_txt h3 {
     font-family: "cafe24Bold";
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 3vw;
     margin-bottom: 2vw;
   }
   main #design .explain_txt_box .explain_txt .explain_sub_txt {
     display: flex;
   }
   main #design .explain_txt_box .explain_txt .explain_sub_txt p {
-    font-size: 1.2rem;
+    font-size: 2vw;
     width: 53vw;
   }
   main #design .explain_txt_box .explain_txt .explain_sub_txt .circle_ico {
@@ -349,12 +349,12 @@
   main #design .explain_txt_box .explain_txt .explain_sub_txt .color_box {
     border-radius: 50%;
     display: inline-block;
-    width: 150px;
-    height: 150px;
+    width: 13vw;
+    height: 13vw;
     margin: 0 1vw;
     background-color: #E50112;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -373,13 +373,13 @@
     margin: 0 0.5vw;
     display: inline-block;
     font-family: "cafe24Bold";
-    font-size: 1.2rem;
+    font-size: 2vw;
   }
   main #publishing {
-    height: 600px;
+    height: 55vw;
   }
   main #publishing .title_box h2 {
-    font-size: 1.8rem;
+    font-size: 3vw;
     padding-top: 1vw;
   }
   main #publishing .explain_txt_box {
@@ -401,7 +401,7 @@
   main #publishing .explain_txt_box .explain_txt h3 {
     font-family: "cafe24Bold";
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 3vw;
     margin-bottom: 2vw;
   }
   main #publishing .explain_txt_box .explain_txt .explain_sub_txt {
@@ -436,13 +436,10 @@
     z-index: -1;
   }
   main #publishing .explain_txt_box .explain_txt .explain_sub_txt .explain_sub_title h4 {
-    font-size: 1.3rem;
+    font-size: 2vw;
   }
   main #problem {
-    height: 900px;
-  }
-  main #problem h2 {
-    font-size: 1.8rem;
+    height: 85vw;
   }
   main #problem .explain_txt_box {
     font-family: "nexonRegular";
@@ -463,7 +460,7 @@
   main #problem .explain_txt_box .explain_txt h3 {
     font-family: "cafe24Bold";
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 3vw;
     margin-bottom: 2vw;
   }
   main #problem .explain_txt_box .explain_txt .explain_sub_txt {
@@ -472,20 +469,17 @@
     align-items: normal;
     margin-bottom: 2vw;
   }
-  main #problem .explain_txt_box .explain_txt .explain_sub_txt ul li {
-    font-size: 1.3rem;
-  }
   main #problem .explain_txt_box .explain_txt .explain_sub_txt ul ul {
     position: relative;
     margin-left: 1vw;
-    font-size: 1.5rem;
+    font-size: 2.5vw;
     margin-left: 2vw;
   }
   main #problem .explain_txt_box .explain_txt .explain_sub_txt ul ul:before {
     content: "";
     display: block;
-    width: 12px;
-    height: 12px;
+    width: 1.5vw;
+    height: 1.5vw;
     border: 1px solid #000;
     border-radius: 50%;
     position: absolute;
@@ -493,7 +487,7 @@
     left: -2vw;
   }
   main #problem .explain_txt_box .explain_txt .explain_sub_txt ul ul li {
-    font-size: 1.2rem;
+    font-size: 2vw;
     list-style: none;
   }
   main #problem .explain_txt_box .explain_txt .explain_sub_txt .explain_sub_title {
@@ -523,7 +517,7 @@
     z-index: -1;
   }
   main #problem .explain_txt_box .explain_txt .explain_sub_txt .explain_sub_title h4 {
-    font-size: 1.8rem;
+    font-size: 2.5vw;
   }
   main .view_btn {
     background-color: #AED0EE;
@@ -539,7 +533,7 @@
   }
   main .view_btn p {
     color: #fff;
-    font-size: 2rem;
+    font-size: 3.5vw;
     font-family: "rubikBold";
     padding: 1.5vw 2vw;
   }
