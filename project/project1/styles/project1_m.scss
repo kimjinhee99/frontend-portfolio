@@ -215,8 +215,9 @@
 
   /* main */
   main {
+    overflow-x: hidden;
     .preview_box {
-      overflow: hidden;
+      overflow-x: hidden;
       border: 10px solid #000;
       border-radius: 10px;
       width: 300px; height: 400px;
