@@ -373,6 +373,7 @@
     margin: 0 0.5vw;
     display: inline-block;
     font-family: "cafe24Bold";
+    font-size: 1rem;
   }
   main #publishing {
     height: 800px;
@@ -439,6 +440,9 @@
   }
   main #problem {
     height: 50vw;
+  }
+  main #problem h2 {
+    font-size: 2rem;
   }
   main #problem .explain_txt_box {
     font-family: "nexonRegular";

@@ -67,7 +67,7 @@ bannerTxt.forEach(el => bannerObserver.observe(el));
 const bgText = document.querySelector('.banner_bg');
 
 addEventListener('scroll', () => {
-  bgText.style.right = `${- 920 + (scrollY)}px`
+  bgText.style.right = `${- 490 + (scrollY)}px`
 });
 
 // 화면에 preview_box가 보여지면 애니메이션 실행

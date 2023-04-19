@@ -386,6 +386,7 @@
             margin: 0 0.5vw;
             display: inline-block;
             font-family: $fontbold;
+            font-size: 1rem;
           }
         }
       }
@@ -454,6 +455,9 @@
     }
     #problem {
       height: 50vw;
+      h2 {
+        font-size: 2rem;
+      }
       .explain_txt_box {
         font-family: $nexonfont;
         margin-left: 50vw;

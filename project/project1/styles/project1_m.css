@@ -13,13 +13,14 @@ body {
 header {
   background-color: #0C2943;
   position: relative;
+  overflow: hidden;
   /* banner */
 }
 header nav {
   font-family: "rubikBold";
   width: 100%;
   position: fixed;
-  padding: 1vw 2.5vw;
+  padding: 1vw 3.5vw;
   display: flex;
   align-items: center;
   justify-content: space-between;

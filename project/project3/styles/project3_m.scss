@@ -20,6 +20,7 @@ body {
 header {
   background-color: #0C2943;
   position: relative;
+  overflow: hidden;
 
   nav {
     font-family: $rubikbold;
