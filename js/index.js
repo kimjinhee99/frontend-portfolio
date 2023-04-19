@@ -1,5 +1,6 @@
 // full page
 new fullpage('#fullpage', {
+  responsiveWidth: 760,
 
   // licenseKey: 'YOUR LICENSE KEY HERE ',
   // scrollBar: true,

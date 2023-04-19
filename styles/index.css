@@ -171,18 +171,19 @@
   }
   .header .banner .banner_title .title_top,
   .header .banner .banner_title .title_bottom {
-    font-size: 20vw;
+    font-size: 16vw;
     color: transparent;
     position: relative;
     display: inline-block;
     font-family: 'babyface';
     font-weight: 300;
     text-transform: uppercase;
+    top: 2vw;
   }
   .header .banner .banner_title .title_bottom {
     padding-left: 23VW;
     position: absolute;
-    top: 20vw;
+    top: 22vw;
   }
   .header .banner .banner_title .title_top::after {
     content: "Port";
@@ -205,7 +206,7 @@
     font-size: 1.1vw;
     letter-spacing: 0;
     position: absolute;
-    top: 21.5vw; left: 35vw;
+    top: 20vw; left: 35vw;
     font-family: var(--font);
     /* font-weight: 500; */
   }
@@ -233,27 +234,27 @@
     transition: 3s;
   }
   .header.active .banner .monkey_star {
-    transform: translateX(19vw);
+    transform: translateX(18vw);
   }
   .header.active .banner .monkey_star .star {
     transform: rotate(360deg);
   }
   .header .banner .monkey_star .monkey {
-    width: 13VW;
+    width: 15vw;
     position: absolute;
-    left: 0; bottom: -9vw;
+    left: 0; bottom: -12vw;
   }
   .header .banner .monkey_star .star {
-    width: 12vw;
+    width: 14vw;
     position: absolute;
-    left: -1vw; bottom: -18vw;
+    left: -1vw; bottom: -23vw;
     transition: 3s;
   }
   .header.active .banner .title_star {
     background: url(../images/sfef.gif) no-repeat 50% / cover;
     position: absolute;
-    width: 65vw; height: 600px;
-    top: 5vw; left: 19vw;
+    width: 67vw; height: 800px;
+    top: -2vw; left: 15vw;
   }
   .header .banner_bg .bg_j {
     position: absolute;
@@ -336,13 +337,14 @@
     opacity: 1;
     transition: 1.5s;
     padding-top: 6vw;
+    margin-bottom: 0;
   }
   .about_box .my_photo {
     max-width: 30vw;
   }
   .about_box .about_txt_box {
     width: 47vw;
-    padding-top: 3.5vw;
+    /* padding-top: 3.5vw; */
   }
   .about_box .about_txt_box h4 {
     font-family: var(--fontbold);
@@ -446,7 +448,7 @@
     color: #fff;
   }
   .about_bg {
-    font-size: 8vw;
+    font-size: 8rem;
     font-family: var(--nexonfontbold);
     font-weight: bold;
     -webkit-text-stroke: 3px var(--color1);
@@ -455,10 +457,10 @@
     transform: rotate(180deg);
     position: absolute;
     height: 38vw;
-    top: -38vw; right: -2vw;
+    top: -40vw; right: -2vw;
   }
   .about.active .about_bg {
-    top: 20vw;
+    top: 12vw;
     transition: 1.5s;
     transition-delay: .5s;
   }

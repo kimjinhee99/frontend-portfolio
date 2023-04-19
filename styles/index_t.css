@@ -129,13 +129,14 @@
     display: block;
   }
   .fp-is-overflow .fp-overflow.fp-auto-height, .fp-is-overflow .fp-overflow.fp-auto-height-responsive, .fp-is-overflow>.fp-overflow {
-    /* overflow-y: hidden; */
+    overflow-y: visible;
     height: 100%;
     box-sizing: border-box;
   }
   .fp-watermark {
     display: none;
   }
+  
   
   
   /* header  */
@@ -182,11 +183,15 @@
     font-family: 'babyface';
     font-weight: 300;
     text-transform: uppercase;
+    top: 100px;
+    left: 2vw;
+    font-size: 200px;
   }
   .header .banner .banner_title .title_bottom {
-    padding-left: 25VW;
+    /* padding-left: 25VW; */
     position: absolute;
-    top: 30vw;
+    top: 400px;
+    left: 25vw;
   }
   .header .banner .banner_title .title_top::after {
     content: "Port";
@@ -206,16 +211,16 @@
     z-index: -1;
   }
   .header .banner .banner_title .title_sub {
-    font-size: 1.8vw;
+    font-size: 14px;
     letter-spacing: 0;
     position: absolute;
-    top: 28vw; left: 25vw;
+    top: 350px; left: 30vw;
     font-family: var(--font);
     /* font-weight: 500; */
   }
   .header .banner .aladin {
     position: absolute;
-    right: 6vw; top: 0vw;
+    right: 0vw; top: 100px;
     animation: aladin 3s linear infinite backwards;
   }
   @keyframes aladin {
@@ -230,7 +235,7 @@
     }
   }
   .header .banner .aladin img {
-    width: 28vw;
+    width: 280px;
   }
   .header .banner .monkey_star {
     /* width: 300px; */
@@ -243,27 +248,27 @@
     transform: rotate(360deg);
   }
   .header .banner .monkey_star .monkey {
-    width: 16VW;
+    width: 180px;
     position: absolute;
-    left: 8vw; bottom: -15vw;
+    left: 8vw; bottom: -320px;
   }
   .header .banner .monkey_star .star {
-    width: 20vw;
+    width: 200px;
     position: absolute;
-    left: 4vw; bottom: -32vw;
+    left: 4vw; bottom: -480px;
     transition: 10s;
   }
   .header.active .banner .title_star {
     background: url(../images/sfef.gif) no-repeat 50% / cover;
     position: absolute;
-    width: 70vw; height: 70vw;
+    width: 82vw; height: 600px;
     max-height: 800px;
-    top: -6vw; left: 8vw;
+    top: 50px; left: 10vw;
   }
   .header .banner_bg .bg_j {
     position: absolute;
     top: -15vw; left: -4.2vw;
-    font-size: 50vw;
+    font-size: 27rem;
     font-weight: 500;
     color: #a0c3d2;
     z-index: -2;
@@ -271,8 +276,8 @@
   }
   .header .banner_bg .bg_h {
     position: absolute;
-    top: 40vw; right: -5.5vw;
-    font-size: 50vw;
+    top: 550px; right: -3.5vw;
+    font-size: 27rem;
     font-weight: 500;
     color: #a0c3d2;
     z-index: -2;
@@ -308,7 +313,7 @@
     font-size: 4vw;
     font-weight: 500;
     position: absolute;
-    left: 45vw; top: 66vw;
+    left: 45vw; top: 105vw;
     /* height: 100px; */
     animation: arrow 2s linear infinite backwards;
   }
@@ -341,7 +346,7 @@
     transform: translateY(0vw);
     opacity: 1;
     transition: 1.5s;
-    padding-top: 3vw;
+    padding-top: 100px;
   }
   
   .about_box .my_photo {
@@ -462,7 +467,7 @@
     color: #fff;
   }
   .about_bg {
-    font-size: 12vw;
+    font-size: 8rem;
     font-family: var(--nexonfontbold);
     font-weight: bold;
     -webkit-text-stroke: 3px var(--color1);
@@ -471,10 +476,10 @@
     transform: rotate(180deg);
     position: absolute;
     height: 100vw;
-    top: -100vw; right: -4vw;
+    top: -200px; right: -4vw;
   }
   .about.active .about_bg {
-    top: -20vw;
+    top: 0;
     transition: 1.5s;
     transition-delay: .5s;
   }
@@ -491,7 +496,7 @@
     /* margin: 50px 0; */
     transform: translateY(10vw);
     opacity: 0;
-    padding-top: 30px;
+    padding-top: 50px;
   }
   .portfolio.active .portfolio_list_box {
     transform: translateY(0vw);
@@ -721,7 +726,7 @@
     transition: 1s;
   }
   .section .skillsSwiper {
-    padding-top: 350px;
+    padding-top: 400px;
     margin-left: 20vw;
     /* padding-left: 20px; */
     /* margin-right: 150px; */
@@ -858,12 +863,12 @@
     opacity: 0.7;
     border-radius: 50%;
     position: absolute;
-    top: 300px; left: 9vw;
+    top: 370px; left: 9vw;
     text-indent: -9999px;
     transition: 1s;
   }
   .skills.active .skills_bg_circle {
-    width: 60vw; height: 60vw;
+    width: 67vw; height: 67vw;
     -webkit-transform: translateY(-7vw);
     transition-delay: 1.5s;
   }
@@ -872,7 +877,7 @@
   .contact {
     margin: 0;
     padding: 0;
-    background: url(../images/contact.png) no-repeat 50% / cover;
+    background: url(../images/contact_t.png) no-repeat 50% / cover;
     position: relative;
   }
   .contact .swiper {
@@ -880,7 +885,7 @@
     opacity: 0.7;
   }
   .contact_cloud_inner ul li img {
-    /* height: 25vw; */
+    height: 200px;
   }
   .contact .contact_box {
     display: flex;
@@ -891,7 +896,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10vw;
+    margin-top: 160px;
   }
   .contact .contact_box .contact_title .title_box {
     text-align: center;
@@ -1070,7 +1075,7 @@
   }
   .contact .go_up_btn {
     position: absolute;
-    top: 65vw; right: 50px;
+    top: 850px; right: 50px;
     background-color: #fff;
     border-radius: 50%;
     width: 40px; height: 40px;

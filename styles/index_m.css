@@ -30,11 +30,12 @@ h3 {
   padding-left: 2.5vw;
   position: relative;
   height: 4.2vw;
+  /* opacity: 0; */
 }
 h3:after {
   content: "";
   background-color: #AED0EE;
-  width: 0;
+  width: 43vw;
   height: 5vw;
   border-radius: 40px;
   display: block;
@@ -42,19 +43,29 @@ h3:after {
   top: 5vw; left: 2%;
   z-index: -1;
 }
+/* .section.active h3 {
+  opacity: 1;
+  transition: 2s;
+}
 .section.active h3:after {
   width: 43vw;
   transition: 1s;
-}
+} */
 .about_header, .portfolio_header, .skills_header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .menu_bar {
   position: relative;
   /* padding-bottom: 5vw; */
   /* z-index: 9; */
+  /* opacity: 0; */
 }
+/* .section.active .menu_bar {
+  opacity: 1;
+  transition: 2s;
+} */
 .menu_bar .gnb li {
   cursor: pointer;
 }
@@ -127,14 +138,21 @@ h3:after {
   display: block;
 }
 .fp-is-overflow .fp-overflow.fp-auto-height, .fp-is-overflow .fp-overflow.fp-auto-height-responsive, .fp-is-overflow>.fp-overflow {
-  /* overflow-y: hidden; */
+  overflow-y: visible;
   height: 100%;
   box-sizing: border-box;
 }
 .fp-watermark {
   display: none;
 }
-
+.fp-responsive .fp-is-overflow.fp-section {
+  height: auto;
+  min-height: auto;
+}
+.fp-scrollable .fp-section:not(.fp-auto-height):not([data-percentage]), .fp-scrollable .fp-slide:not(.fp-auto-height):not([data-percentage]), .fp-scrollable.fp-responsive .fp-is-overflow.fp-section:not(.fp-auto-height):not([data-percentage]) {
+  height: auto;
+  min-height: 80vh;
+}
 
 /* header  */
 .header {
@@ -213,7 +231,7 @@ h1 a img {
 }
 .header .banner .aladin {
   position: absolute;
-  right: 3vw; top: 32vw;
+  right: 3vw; top: 10vw;
   animation: aladin 3s linear infinite backwards;
 }
 @keyframes aladin {
@@ -254,9 +272,9 @@ h1 a img {
 .header.active .banner .title_star {
   background: url(../images/sfef.gif) no-repeat 50% / cover;
   position: absolute;
-  width: 77vw; height: 150vw;
+  width: 77vw; height: 500px;
   max-height: 100vw;
-  top: 5vw; left: 10vw;
+  top: 10vw; left: 10vw;
 }
 .header .banner_bg .bg_j {
   position: absolute;
@@ -306,7 +324,7 @@ h1 a img {
   font-size: 5vw;
   font-weight: 500;
   position: absolute;
-  left: 45vw; top: 120vw;
+  left: 45vw; top: 550px;
   /* height: 100px; */
   animation: arrow 2s linear infinite backwards;
 }
@@ -324,23 +342,24 @@ h1 a img {
 
 /* about me */
 .about .about_inner {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .about_box {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  padding: 3vw 5vw;
+  padding: 5vw 5vw;
   transform: translateY(10vw);
-  opacity: 0;
+  /* opacity: 0; */
+  margin-bottom: 10vh;
 }
-.about.active .about_box {
+/* .about.active .about_box {
   transform: translateY(0vw);
   opacity: 1;
   transition: 1.5s;
   padding-top: 5vw;
-}
+} */
 
 .about_box .my_photo {
   width: 35vw;
@@ -431,8 +450,8 @@ h1 a img {
   transition-delay: 2s;
 }
 .about_box .about_txt_box .tag {
-  width: 70vw;
-  padding-left: 8vw;
+  width: 80vw;
+  padding-left: 6vw;
   margin-top: 5vw;
   letter-spacing: 0px;
   /* position: absolute;
@@ -459,7 +478,7 @@ h1 a img {
   font-size: 15vw;
   font-family: var(--nexonfontbold);
   font-weight: bold;
-  -webkit-text-stroke: 3px var(--color1);
+  -webkit-text-stroke: 2px var(--color1);
   color: transparent;
   writing-mode: vertical-lr;
   transform: rotate(180deg);
@@ -468,7 +487,7 @@ h1 a img {
   top: -100vw; right: -5vw;
 }
 .about.active .about_bg {
-  top: 23vw;
+  top: 50vw;
   transition: 1.5s;
   transition-delay: .5s;
 }
@@ -483,15 +502,15 @@ h1 a img {
   justify-content: center;
   align-items: center;
   /* margin: 50px 0; */
-  transform: translateY(10vw);
-  opacity: 0;
+  /* transform: translateY(10vw); */
+  /* opacity: 0; */
   padding-top: 5vw;
 }
-.portfolio.active .portfolio_list_box {
+/* .portfolio.active .portfolio_list_box {
   transform: translateY(0vw);
   opacity: 1;
   transition: 1.5s;
-}
+} */
 .portfolio .portfolio_list_box .portfolio_list {
   margin-right: 3vw;
   width: 70vw;
@@ -713,19 +732,19 @@ h1 a img {
   transition: 1s;
 }
 .section .skillsSwiper {
-  padding-top: 300px;
+  padding-top: 35vh;
   margin-left: 20vw;
   /* padding-left: 20px; */
   /* margin-right: 150px; */
   overflow: hidden;
-  transform: translateY(10vw);
-  opacity: 0;
+  /* transform: translateY(10vw); */
+  /* opacity: 0; */
 }
-.skills.active .skillsSwiper {
+/* .skills.active .skillsSwiper {
   transform: translateY(0vw);
   opacity: 1;
   transition: 1.5s;
-}
+} */
 .section .skillsSwiper .swiper-wrapper {
   /* overflow: hidden; */
 }
@@ -850,12 +869,12 @@ h1 a img {
   opacity: 0.7;
   border-radius: 50%;
   position: absolute;
-  top: 290px; left: 9vw;
+  top: 38vh; left: 9vw;
   text-indent: -9999px;
   transition: 1s;
 }
 .skills.active .skills_bg_circle {
-  width: 68vw; height: 68vw;
+  width: 70vw; height: 70vw;
   -webkit-transform: translateY(-7vw);
   transition-delay: 1.5s;
 }
@@ -864,7 +883,7 @@ h1 a img {
 .contact {
   margin: 0;
   padding: 0;
-  background: url(../images/contact.png) no-repeat 50% / cover;
+  background: url(../images/contact_t.png) no-repeat 50% / cover;
   position: relative;
 }
 .contact .swiper {
@@ -883,7 +902,7 @@ h1 a img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20vw;
+  margin-top: 25vh;
 }
 .contact .contact_box .contact_title .title_box {
   text-align: center;
@@ -908,7 +927,7 @@ h1 a img {
   width: 30px; height: 30px;
   text-indent: -9999px;
   position: absolute;
-  top: -3vw; left: 35%;
+  top: -6vw; left: 35%;
 }
 .contact .contact_box .contact_title .title_box .bg_stars2 {
   background: url(../images/star1.png) no-repeat 50% / cover ;
@@ -926,14 +945,14 @@ h1 a img {
 }
 .contact .contact_box .contact_title .title_box .bg_stars4 {
   background: url(../images/star2.png) no-repeat 50% / cover ;
-  width: 40px; height: 40px;
+  width: 30px; height: 30px;
   text-indent: -9999px;
   position: absolute;
   top: -2vw; left: -10%;
 }
 .contact .contact_box .contact_title .title_box .bg_stars5 {
   background: url(../images/star2.png) no-repeat 50% / cover ;
-  width: 60px; height: 60px;
+  width: 40px; height: 40px;
   text-indent: -9999px;
   position: absolute;
   top: -1vw; right: -10%;
@@ -953,7 +972,7 @@ h1 a img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 50px;
   border: 2px solid #FFD600;
   position: relative;
   overflow: hidden;
@@ -1015,7 +1034,7 @@ h1 a img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 50px;
   border: 2px solid #FFD600;
   position: relative;
   overflow: hidden;
@@ -1066,7 +1085,7 @@ h1 a img {
 }
 .contact .go_up_btn {
   position: absolute;
-  top: 110vw; right: 5vw;
+  bottom: 10px; right: 5vw;
   background-color: #fff;
   border-radius: 50%;
   width: 8vw; height: 8vw;
@@ -1083,7 +1102,6 @@ h1 a img {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 .contact .go_up_btn:hover {
   transform: scale(1.2);
