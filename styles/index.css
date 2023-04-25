@@ -210,6 +210,9 @@
     font-family: var(--font);
     /* font-weight: 500; */
   }
+  .header .banner .banner_title .title_sub span {
+    font-size: 1.3vw;
+  }
   .header .banner .aladin {
     position: absolute;
     right: 12vw; top: -2vw;
