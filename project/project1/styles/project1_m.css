@@ -198,6 +198,7 @@ header .banner::after {
 /* main */
 main {
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 main .preview_box {
   overflow-x: hidden;
@@ -526,6 +527,4 @@ main #problem .explain_txt_box .explain_txt .explain_sub_txt ul li {
 }
 main #problem .explain_txt_box .explain_txt .explain_sub_txt img {
   width: 40vw;
-}
-
-/*# sourceMappingURL=project1_m.css.map */
+}/*# sourceMappingURL=project1_m.css.map */
